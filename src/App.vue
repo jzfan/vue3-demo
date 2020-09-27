@@ -3,9 +3,23 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
-  <router-view/>
+  <router-view />
 </template>
 
+<script>
+export default {
+  created() {
+    this.axios
+      .post(
+        "https://www.fastmock.site/mock/507a85e6b7c4ee9a9665cd6420519068/api/login",
+        {}
+      )
+      .then((res) => {
+        console.log(res.data);
+      });
+  },
+};
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
