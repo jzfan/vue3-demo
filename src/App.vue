@@ -1,24 +1,24 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view />
+  <the-layout class="min-h-screen" style="height: 2000px">
+    <router-view />
+  </the-layout>
 </template>
 
 <script>
+import theLayout from '@/components/layout'
 export default {
+  components: { theLayout },
   created() {
     this.axios
       .post(
-        "https://www.fastmock.site/mock/507a85e6b7c4ee9a9665cd6420519068/api/login",
-        {}
+        'https://www.fastmock.site/mock/507a85e6b7c4ee9a9665cd6420519068/api/login',
+        {},
       )
       .then((res) => {
-        console.log(res.data);
-      });
+        console.log(res.data)
+      })
   },
-};
+}
 </script>
 <style>
 #app {

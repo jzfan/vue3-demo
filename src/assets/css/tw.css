@@ -3,3 +3,38 @@
 @tailwind components;
 
 @tailwind utilities;
+
+*:hover.hover\:border {
+  @apply border;
+}
+.border-transparent {
+  border-color: transparent;
+}
+.w-100 {
+  width: 25rem;
+}
+.mt-7 {
+  margin-top: 1.75rem;
+}
+.sy-bg {
+  width: 100%;
+  height: 1000px;
+  background: url('/img/sy-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bottom-10 {
+  bottom: 2.5rem;
+}
+.left-20 {
+  left: 5rem;
+}
+.xy-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.w700 {
+  width: 700px;
+}
