@@ -4,14 +4,11 @@
 
 @tailwind utilities;
 
-*:hover.hover\:border {
+/* *:hover.hover\:border {
   @apply border;
-}
+} */
 .border-transparent {
   border-color: transparent;
-}
-.w-100 {
-  width: 25rem;
 }
 .mt-7 {
   margin-top: 1.75rem;
@@ -34,7 +31,4 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.w700 {
-  width: 700px;
 }

@@ -22,7 +22,7 @@
   <main class="text-black">
     <div class="max-w-7xl mx-auto">
       <div class="bg-gray-f5 pt-16 pb-12">
-        <div class="text-green-dark w700 mx-auto">
+        <div class="text-green-dark md:w-1/2 mx-auto">
           <h3 class="text-4xl font-bold leading-none w-100 mx-auto">
             The virtual world lies within your grasp
           </h3>
