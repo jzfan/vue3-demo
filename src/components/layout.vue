@@ -1,7 +1,7 @@
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
   <div>
-    <the-nav />
+    <!-- <the-nav /> -->
     <slot></slot>
   </div>
 </template>
