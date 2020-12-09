@@ -4,6 +4,7 @@
     <div class="max-w-7xl mx-auto">
       <this-intro />
       <this-details />
+      <this-app />
       <this-params />
       <div class="h-2 w-full bg-green-dark"></div>
       <this-pack />
@@ -14,17 +15,16 @@
 </template>
 
 <script>
-import VideoLi from './videoLi.vue'
 import thisDetails from './details'
 import thisParams from './params'
 import thisPack from './pack'
-import thisQuestions from './questions'
+import thisQuestions from './questions/index'
 import thisOrder from './order'
 import thisHeader from './header'
-import thisIntro from './intro'
+import thisIntro from './intro/index'
+import thisApp from './app'
 export default {
   components: {
-    VideoLi,
     thisDetails,
     thisParams,
     thisPack,
@@ -32,27 +32,10 @@ export default {
     thisOrder,
     thisHeader,
     thisIntro,
+    thisApp,
   },
   data() {
-    return {
-      videos: [
-        {
-          cover: '/img/sy-1.png',
-          src:
-            'https://oss-main.dextarobotics.com/videos/home/applications_sets.mp4',
-        },
-        {
-          cover: '/img/sy-2.jpg',
-          src:
-            'https://oss-main.dextarobotics.com/videos/home/dexmo-introduction.mp4',
-        },
-        {
-          cover: '/img/sy-3.jpg',
-          src:
-            'https://oss-main.dextarobotics.com/videos/home/dexmo-dk1-internal-testing.mp4',
-        },
-      ],
-    }
+    return {}
   },
 }
 </script>

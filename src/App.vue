@@ -10,16 +10,7 @@ import theLayout from '@/components/layout'
 import fixedBar from '@/components/fixedBar'
 export default {
   components: { theLayout, fixedBar },
-  created() {
-    this.axios
-      .post(
-        'https://www.fastmock.site/mock/507a85e6b7c4ee9a9665cd6420519068/api/login',
-        {},
-      )
-      .then((res) => {
-        console.log(res.data)
-      })
-  },
+  created() {},
 }
 </script>
 <style>

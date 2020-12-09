@@ -1,5 +1,6 @@
 <template>
   <section class="relative py-6">
+    <vertical-title class="top-10">参数</vertical-title>
     <video playsinline="true" class="video-js vjs-fill" fill="true">
       <source
         src="https://oss-main.dextarobotics.com/videos/home/specifications.mp4"

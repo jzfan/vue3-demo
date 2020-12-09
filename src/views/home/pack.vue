@@ -1,11 +1,13 @@
 <template>
-  <section class="p-8 bg-white">
+  <section
+    class="relative pb-16 px-16 bg-white flex flex-col md:flex-row md:items-start"
+  >
+    <vertical-title class="top-8">包装</vertical-title>
     <video
       playsinline="playsinline"
-      class="shadow-card"
+      class="shadow-card w-full md:w-3/5 mb-8 mt-24"
       fill="true"
       poster="/a77fb2e500247d4877203e5b2636df1f.jpg"
-      id="vjs_video_3_html5_api"
       tabindex="-1"
       src="https://oss-main.dextarobotics.com/videos/home/unboxing.mp4"
     >
@@ -15,8 +17,10 @@
       />
     </video>
 
-    <div class="text-left ml-4 text-green-dark">
-      <h3 class="mt-8 text-lg font-bold">箱子里有什么</h3>
+    <div
+      class="text-left ml-4 text-green-dark w-full md:w-2/5 md:ml-8 md:mt-24"
+    >
+      <h3 class="text-lg font-bold">箱子里有什么</h3>
       <ul class="">
         <li class="mt-2">
           Dexmo × 2
@@ -47,7 +51,7 @@
         </li>
       </ul>
       <img
-        class="w-100"
+        class="w-100 -ml-8"
         src="https://www.dextarobotics.com/a50e7b22111dd2350aaa6ea40714086b.png?_sw-precache=a50e7b22111dd2350aaa6ea40714086b"
         alt=""
       />

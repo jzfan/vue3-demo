@@ -2,6 +2,7 @@
   <nav
     class="fixed top-0 inset-x-0 z-20 opacity-75"
     :class="showMenu ? 'bg-gray-ed' : 'bg-black'"
+    v-click-away="away"
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-18">
@@ -234,13 +235,10 @@ export default {
         { path: '/app', title: 'app' },
         { path: '/sdk', title: 'sdk' },
         { path: '/press', title: 'press' },
-        { path: '/about', title: 'About us' },
-        { path: '/product', title: 'Product Story' },
+        { path: '/about', title: 'about' },
+        { path: '/product', title: 'product' },
       ],
     }
-  },
-  created() {
-    console.log(this.$i18n.locale)
   },
   computed: {
     curPath() {
@@ -250,6 +248,7 @@ export default {
   methods: {
     setLang(lang) {
       this.$i18n.locale = lang
+      this.$store.commit('setLang', lang)
       this.showFlag = false
     },
     goPath(path) {
@@ -259,6 +258,10 @@ export default {
     },
     onShowMenu() {
       this.showMenu = !this.showMenu
+      this.showFlag = false
+    },
+    away() {
+      this.showMenu = false
       this.showFlag = false
     },
   },

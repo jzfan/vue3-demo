@@ -1,8 +1,8 @@
 <template>
   <div>
-    <!-- <the-nav /> -->
+    <the-nav />
     <slot></slot>
-    <!-- <the-footer /> -->
+    <the-footer />
   </div>
 </template>
 

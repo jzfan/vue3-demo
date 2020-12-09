@@ -8,8 +8,8 @@ import store from './store'
 
 import { createI18n } from 'vue-i18n'
 const i18n = createI18n({
-  locale: store.state.lang,
-  fallbackLocale: 'en',
+  locale: store.state.lang || 'zh',
+  fallbackLocale: 'zh',
 })
 
 import verticalTitle from '@/components/verticalTitle'

@@ -1,8 +1,5 @@
 <template>
-  <li
-    class="md:w-1/3 md:mt-0 mt-4 w-full bg-black relative group cursor-pointer"
-    @click="play = !play"
-  >
+  <li class=" bg-black relative group cursor-pointer" @click="play = !play">
     <template v-if="!play">
       <img :src="item.cover" class="w-full" alt="" />
       <span

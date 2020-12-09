@@ -12,25 +12,33 @@
 
     <transition name="slide-fade">
       <div
-        class="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-md py-2 bg-white ring-1 ring-black ring-opacity-5 text-lg text-gray-darkest"
+        class="origin-top-right absolute top-0 right-12 w-40 rounded-md shadow-md py-2 bg-gray-f5 ring-1 ring-black ring-opacity-5 text-lg text-gray-darkest"
         role="menu"
         aria-orientation="vertical"
         aria-labelledby="user-menu"
         v-if="showForm"
       >
-        <div class="col-span-6 sm:col-span-3">
-          <label
-            for="first_name"
-            class="block text-sm font-medium text-gray-700"
-            >First name</label
-          >
+        <h3 class="text-lg text-center text-green">订阅</h3>
+        <div class="m-2">
           <input
             type="text"
-            name="first_name"
-            id="first_name"
-            autocomplete="given-name"
-            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+            class="px-2 focus:ring-green focus:border-green block w-full shadow-sm sm:text-sm border border-gray-aa "
+            placeholder="Your name"
           />
+        </div>
+        <div class="m-2">
+          <input
+            type="email"
+            class="px-2 focus:ring-green focus:border-green block w-full shadow-sm sm:text-sm border border-gray-aa "
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="m-2 mt-3">
+          <button
+            class="w-full border border-green text-xs rounded hover:bg-green hover:text-white"
+          >
+            提交
+          </button>
         </div>
       </div>
     </transition>
@@ -69,9 +77,14 @@ export default {
       this[item.act](item)
     },
     emailForm(item) {
-      item.icon = 'icon-'
-      this.showForm = true
-      console.log(222222)
+      if (this.showForm) {
+        this.showForm = false
+        item.icon = 'icon-email'
+      } else {
+        this.showForm = true
+        item.icon = 'icon-email_open'
+      }
+      //   console.log(222222)
     },
   },
 }

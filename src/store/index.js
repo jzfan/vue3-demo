@@ -11,6 +11,7 @@ export default createStore({
     },
     setLang(state, lang) {
       state.lang = lang
+      localStorage.setItem('lang', lang)
     },
   },
   actions: {},

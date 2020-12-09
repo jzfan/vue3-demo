@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute text-left text-green vertical-title">
+  <div class="absolute font-thin text-lg text-left text-green vertical-title">
     <slot></slot>
   </div>
 </template>
@@ -11,7 +11,6 @@ export default {}
 <style>
 .vertical-title {
   left: 2rem;
-  top: 1rem;
   transform-origin: left;
   transform: rotate(90deg);
 }
