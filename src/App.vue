@@ -1,13 +1,15 @@
 <template>
   <the-layout class="min-h-screen" style="height: 5000px">
     <router-view />
+    <fixed-bar />
   </the-layout>
 </template>
 
 <script>
 import theLayout from '@/components/layout'
+import fixedBar from '@/components/fixedBar'
 export default {
-  components: { theLayout },
+  components: { theLayout, fixedBar },
   created() {
     this.axios
       .post(

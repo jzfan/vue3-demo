@@ -1,27 +1,15 @@
-<script>
-export default {
-  name: 'test',
-}
-</script>
-
 <template>
-  <div class="pt-32">
-    <label for="locale">locale</label>
-    <select v-model="$i18n.locale">
-      <option>en</option>
-      <option>ja</option>
-    </select>
-    <p>message: {{ $t('hello') }}</p>
+  <div v-click-away="onClickAway">
+    hi
   </div>
 </template>
 
-<i18n>
-{
-  "en": {
-    "hello": "hello world!"
+<script>
+export default {
+  methods: {
+    onClickAway(event) {
+      console.log(event)
+    },
   },
-  "ja": {
-    "hello": "こんにちは、世界！"
-  }
 }
-</i18n>
+</script>

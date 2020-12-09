@@ -7,16 +7,20 @@ import '@/assets/css/tw.css'
 import store from './store'
 
 import { createI18n } from 'vue-i18n'
-console.log(createI18n)
-
 const i18n = createI18n({
-  locale: 'zh', // set locale
-  fallbackLocale: 'en', // set fallback locale
+  locale: store.state.lang,
+  fallbackLocale: 'en',
 })
+
+import verticalTitle from '@/components/verticalTitle'
+
+import VueClickAway from 'vue3-click-away'
 
 createApp(App)
   .use(axios)
   .use(i18n)
   .use(store)
   .use(router)
+  .use(VueClickAway)
+  .component('vertical-title', verticalTitle)
   .mount('#app')

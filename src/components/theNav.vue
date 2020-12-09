@@ -38,7 +38,7 @@
                   aria-haspopup="true"
                   @click="showFlag = !showFlag"
                 >
-                  <flag-ch v-if="$i18n.locale == 'zh'" />
+                  <flag-zh v-if="$i18n.locale == 'zh'" />
                   <flag-en v-else />
 
                   <i class="iconfont icon-down text-sm ml-2"></i>
@@ -67,7 +67,7 @@
                     role="menuitem"
                     @click="setLang('zh')"
                   >
-                    <flag-ch /><span class="ml-2">简体中文</span>
+                    <flag-zh /><span class="ml-2">简体中文</span>
                   </button>
 
                   <button
@@ -171,7 +171,7 @@
                 aria-haspopup="true"
                 @click="showFlag = !showFlag"
               >
-                <flag-ch v-if="$i18n.locale == 'zh'" />
+                <flag-zh v-if="$i18n.locale == 'zh'" />
                 <flag-en v-else />
 
                 <i class="iconfont icon-down text-sm ml-2"></i>
@@ -200,7 +200,7 @@
                   role="menuitem"
                   @click="setLang('zh')"
                 >
-                  <flag-ch /><span class="ml-2">简体中文</span>
+                  <flag-zh /><span class="ml-2">简体中文</span>
                 </button>
 
                 <button
@@ -220,11 +220,11 @@
 </template>
 
 <script>
-import flagCh from '@/components/svg/flagCh'
+import flagZh from '@/components/svg/flagZh'
 import flagEn from '@/components/svg/flagEn'
-import logoNav from '@/components/svg/logoNav'
+import logoNav from '@/components/svg/logoZh'
 export default {
-  components: { flagCh, flagEn, logoNav },
+  components: { flagZh, flagEn, logoNav },
   data() {
     return {
       showMenu: false,

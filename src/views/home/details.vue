@@ -1,5 +1,6 @@
 <template>
-  <section class="py-16 bg-green text-white">
+  <section class="relative py-16 bg-green text-white">
+    <vertical-title>应用</vertical-title>
     <div class="w-100 mx-auto text-left">
       <div v-for="item in all" :key="item.title">
         <h3 class="mt-20 text-2xl font-semibold leading-none">
@@ -25,8 +26,7 @@ export default {
     }
   },
   created() {
-    this.axios.get('/json/home.json').then((res) => {
-      console.log(res.data)
+    this.axios.get('/json/home-en.json').then((res) => {
       this.all = res.data.details
     })
   },

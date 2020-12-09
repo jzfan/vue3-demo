@@ -12,13 +12,15 @@ module.exports = {
       xl: '1280px',
     },
     colors: {
+      red: '#E53E3E',
       blue: {
         light: '#85d7ff',
-        DEFAULT: '#1fb6ff',
+        DEFAULT: '#4299E1',
         dark: '#009eeb',
       },
       green: '#12aa9c',
       'green-dark': '#00918a',
+      'green-light': '#48BB78',
       gray: {
         darkest: '#1f2d3d',
         dark: '#3c4858',
