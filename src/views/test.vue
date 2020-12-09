@@ -5,12 +5,14 @@ export default {
 </script>
 
 <template>
-  <label for="locale">locale</label>
-  <select v-model="$i18n.locale">
-    <option>en</option>
-    <option>ja</option>
-  </select>
-  <p>message: {{ $t('hello') }}</p>
+  <div class="pt-32">
+    <label for="locale">locale</label>
+    <select v-model="$i18n.locale">
+      <option>en</option>
+      <option>ja</option>
+    </select>
+    <p>message: {{ $t('hello') }}</p>
+  </div>
 </template>
 
 <i18n>

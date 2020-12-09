@@ -1,15 +1,16 @@
 <template>
-  <!-- This example requires Tailwind CSS v2.0+ -->
   <div>
-    <!-- <the-nav /> -->
+    <the-nav />
     <slot></slot>
+    <the-footer />
   </div>
 </template>
 
 <script>
 import theNav from './theNav'
+import theFooter from './theFooter'
 export default {
-  components: { theNav },
+  components: { theNav, theFooter },
 }
 </script>
 

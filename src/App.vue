@@ -1,5 +1,5 @@
 <template>
-  <the-layout class="min-h-screen" style="height: 2000px">
+  <the-layout class="min-h-screen" style="height: 5000px">
     <router-view />
   </the-layout>
 </template>

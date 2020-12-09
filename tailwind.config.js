@@ -23,6 +23,8 @@ module.exports = {
         darkest: '#1f2d3d',
         dark: '#3c4858',
         DEFAULT: '#c0ccda',
+        aa: '#aaaaaa',
+        26: '#262626',
         ed: '#ededed',
         f5: '#f5f5f5;',
       },

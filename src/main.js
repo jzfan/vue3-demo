@@ -10,7 +10,8 @@ import { createI18n } from 'vue-i18n'
 console.log(createI18n)
 
 const i18n = createI18n({
-  // shomething vue-i18n options here ...
+  locale: 'zh', // set locale
+  fallbackLocale: 'en', // set fallback locale
 })
 
 createApp(App)

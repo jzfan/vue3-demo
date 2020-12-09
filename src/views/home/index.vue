@@ -1,6 +1,8 @@
 <template>
-  <header class="sy-bg">
-    <div class="absolute bottom-10 left-20 w-100 text-left text-white">
+  <header class="sy-bg relative">
+    <div
+      class="absolute md:bottom-1/3 md:w-160 bottom-10 left-20 w-100 text-left text-white"
+    >
       <h1 class="text-5xl font-bold leading-none text-gray-900">
         Touch the Untouchable
       </h1>
@@ -18,10 +20,15 @@
         world.
       </p>
     </div>
+    <img
+      class="absolute right-6 bottom-6 w-0 md:w-40"
+      src="/img/award.png"
+      alt=""
+    />
   </header>
   <main class="text-black">
     <div class="max-w-7xl mx-auto">
-      <div class="bg-gray-f5 pt-16 pb-12">
+      <section class="bg-gray-f5 pt-16 pb-12">
         <div class="text-green-dark md:w-1/2 mx-auto">
           <h3 class="text-4xl font-bold leading-none w-100 mx-auto">
             The virtual world lies within your grasp
@@ -34,33 +41,54 @@
             gaming, simulation, aerospace and much more.
           </p>
         </div>
-        <ul class="flex shadow-card mt-12">
-          <li
-            v-for="(video, index) in videos"
-            :key="index"
-            class="flex-1 relative group cursor-pointer"
-          >
-            <img :src="video.cover" class="w-full" alt="" />
-            <span
-              class="absolute hidden xy-center w-12 h-12 rounded-full bg-white group-hover:flex items-center justify-center"
-            >
-              <i class="">A</i>
-            </span>
-          </li>
+        <ul class="flex flex-wrap shadow-none md:shadow-card mt-12">
+          <video-li v-for="(item, index) in videos" :key="index" :item="item" />
         </ul>
-      </div>
+      </section>
+      <this-details />
+      <this-params />
+      <div class="h-2 w-full bg-green-dark"></div>
+      <this-pack />
+      <this-questions />
+      <this-order />
     </div>
   </main>
 </template>
 
 <script>
+import VideoLi from './videoLi.vue'
+import thisDetails from './details'
+import thisParams from './params'
+import thisPack from './pack'
+import thisQuestions from './questions'
+import thisOrder from './order'
 export default {
+  components: {
+    VideoLi,
+    thisDetails,
+    thisParams,
+    thisPack,
+    thisQuestions,
+    thisOrder,
+  },
   data() {
     return {
       videos: [
-        { cover: '/img/sy-1.png' },
-        { cover: '/img/sy-2.jpg' },
-        { cover: '/img/sy-3.jpg' },
+        {
+          cover: '/img/sy-1.png',
+          src:
+            'https://oss-main.dextarobotics.com/videos/home/applications_sets.mp4',
+        },
+        {
+          cover: '/img/sy-2.jpg',
+          src:
+            'https://oss-main.dextarobotics.com/videos/home/dexmo-introduction.mp4',
+        },
+        {
+          cover: '/img/sy-3.jpg',
+          src:
+            'https://oss-main.dextarobotics.com/videos/home/dexmo-dk1-internal-testing.mp4',
+        },
       ],
     }
   },
