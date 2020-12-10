@@ -252,6 +252,7 @@ export default {
       this.$i18n.locale = lang
       this.$store.commit('setLang', lang)
       this.showFlag = false
+      this.showMenu = false
     },
     goPath(path) {
       this.showMenu = false

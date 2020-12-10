@@ -15,7 +15,7 @@
 }
 .sy-bg {
   width: 100%;
-  height: 1000px;
+  height: 100vh;
   background: url('/img/sy-bg.jpg');
   background-size: cover;
   background-position: center;

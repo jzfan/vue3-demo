@@ -3,7 +3,7 @@
     <div
       class="md:flex-row md:justify-between flex flex-col justify-center items-center md:items-baseline"
     >
-      <ul class="flex flex-wrap text-sm space-x-6">
+      <ul class="flex flex-wrap text-sm space-x-6 justify-center">
         <li>> 主页</li>
         <li>应用场景</li>
         <li>软件支持</li>
