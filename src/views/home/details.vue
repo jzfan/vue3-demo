@@ -1,17 +1,95 @@
 <template>
-  <section class="relative py-16 bg-green text-white">
-    <div class="w-100 mx-auto text-left">
-      <div v-for="(item, index) in all" :key="index">
-        <h3 class="mt-20 text-2xl font-semibold leading-none">
-          {{ item.title }}
-        </h3>
-        <template v-for="sub in item.ps" :key="sub.subtitle">
-          <h4 class="mt-2 font-bold text-xl">{{ sub.subtitle }}</h4>
-          <p>
-            {{ sub.p }}
-          </p>
+  <section class="relative py-16 bg-green text-white px-2 md:bg-detail">
+    <div
+      class="px-12 text-left md:flex items-center justify-between"
+      v-if="all.length"
+    >
+      <figure class="md:w-80">
+        <figcaption class="mt-6 text-2xl font-semibold leading-none">
+          {{ all[0].title }}
+        </figcaption>
+        <template v-for="sub in all[0].ps" :key="sub.subtitle">
+          <h4
+            class="mt-2 font-bold text-lg cursor-pointer md:text-green"
+            @click="toggleShowP(sub.subtitle)"
+          >
+            <i
+              v-if="showSub != sub.subtitle"
+              class="iconfont icon-right hidden md:inline-block"
+            ></i>
+            <i v-else class="iconfont icon-Down-v hidden md:inline-block"></i>
+            <span class="ml-2">
+              {{ sub.subtitle }}
+            </span>
+          </h4>
+          <transition name="fade">
+            <p v-show="showSub == sub.subtitle">
+              {{ sub.p }}
+            </p>
+          </transition>
         </template>
-        <img class="mt-4 w-full" :src="images[index]" />
+        <div class="">
+          <img class="mt-4 w-full" :src="images[0]" />
+        </div>
+      </figure>
+      <div>
+        <figure class="md:w-80 md:-ml-8">
+          <figcaption class="mt-20 text-2xl font-semibold leading-none">
+            {{ all[1].title }}
+          </figcaption>
+          <template v-for="sub in all[1].ps" :key="sub.subtitle">
+            <h4
+              class="mt-2 font-bold text-lg cursor-pointer md:text-green"
+              @click="toggleShowP(sub.subtitle)"
+            >
+              <i
+                v-if="showSub != sub.subtitle"
+                class="iconfont icon-right hidden md:inline-block"
+              ></i>
+              <i v-else class="iconfont icon-Down-v hidden md:inline-block"></i>
+              <span class="ml-2">
+                {{ sub.subtitle }}
+              </span>
+            </h4>
+            <transition name="fade">
+              <p v-show="showSub == sub.subtitle">
+                {{ sub.p }}
+              </p>
+            </transition>
+          </template>
+          <div class="">
+            <img class="mt-4 w-full" :src="images[1]" />
+          </div>
+        </figure>
+
+        <figure class="md:w-80">
+          <figcaption class="mt-20 text-2xl font-semibold leading-none">
+            {{ all[2].title }}
+          </figcaption>
+          <template v-for="sub in all[2].ps" :key="sub.subtitle">
+            <h4
+              class="mt-2 font-bold text-lg cursor-pointer md:text-green"
+              @click="toggleShowP(sub.subtitle)"
+            >
+              <i
+                v-if="showSub != sub.subtitle"
+                class="iconfont icon-right hidden md:inline-block"
+              ></i>
+              <i v-else class="iconfont icon-Down-v hidden md:inline-block"></i>
+              <span class="ml-2">
+                {{ sub.subtitle }}
+              </span>
+            </h4>
+            <transition name="fade">
+              <p v-show="showSub == sub.subtitle">
+                {{ sub.p }}
+              </p>
+            </transition>
+          </template>
+          <div class="">
+            <img class="mt-4 w-full" :src="images[2]" />
+          </div>
+        </figure>
       </div>
     </div>
   </section>
@@ -22,6 +100,7 @@ export default {
   data() {
     return {
       all: [],
+      showSub: '',
       images: [
         'https://oss-main.dextarobotics.com/images/home/free-to-use-en.gif',
         'https://oss-main.dextarobotics.com/images/home/truly-intuitive-natural-interaction-en.gif',
@@ -34,12 +113,18 @@ export default {
       immediate: true,
       handler: function(newVal) {
         this.$i18n.locale = newVal
+        this.showSub = ''
         let url = `/json/home-${newVal}.json`
         this.axios.get(url).then((res) => {
           console.log(res)
           this.all = res.data.details
         })
       },
+    },
+  },
+  methods: {
+    toggleShowP(sub) {
+      this.showSub = this.showSub == sub ? '' : sub
     },
   },
 }
@@ -57,3 +142,5 @@ export default {
   }
 }
 </i18n>
+
+<style></style>

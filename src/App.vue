@@ -1,7 +1,10 @@
 <template>
-  <the-layout class="min-h-screen" style="height: 5000px">
+  <the-layout class="min-h-screen relative">
     <router-view />
     <fixed-bar />
+    <button class="btn btn-green px-6 fixed z-20 left-4 bottom-4">
+      即刻订购
+    </button>
   </the-layout>
 </template>
 

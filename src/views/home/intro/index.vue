@@ -1,7 +1,7 @@
 <template>
-  <section class="bg-gray-f5 pt-16 pb-12">
+  <section class="bg-gray-f5 pt-16 pb-12 px-2 text-center">
     <div class="text-green-dark md:w-1/2 mx-auto">
-      <h3 class="text-4xl font-bold leading-none w-100 mx-auto">
+      <h3 class="text-2xl md:text-4xl font-bold leading-none  md:w-100 mx-auto">
         {{ $t('title') }}
       </h3>
       <p class="font-medium text-lg mt-7">

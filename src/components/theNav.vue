@@ -1,14 +1,15 @@
 <template>
   <nav
-    class="fixed top-0 inset-x-0 z-20 opacity-75"
-    :class="showMenu ? 'bg-gray-ed' : 'bg-black'"
+    class="fixed top-0 inset-x-0 z-30"
+    :class="showMenu ? 'bg-gray-ed' : 'opacity-75 bg-black'"
     v-click-away="away"
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-18">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-            <logo-nav />
+            <logo-zh v-if="$store.state.lang == 'zh'" />
+            <logo-en v-else />
           </div>
         </div>
         <div class="hidden md:block">
@@ -223,9 +224,10 @@
 <script>
 import flagZh from '@/components/svg/flagZh'
 import flagEn from '@/components/svg/flagEn'
-import logoNav from '@/components/svg/logoZh'
+import logoZh from '@/components/svg/logoZh'
+import logoEn from '@/components/svg/logoEn'
 export default {
-  components: { flagZh, flagEn, logoNav },
+  components: { flagZh, flagEn, logoZh, logoEn },
   data() {
     return {
       showMenu: false,

@@ -7,7 +7,28 @@
         type="video/mp4"
       />
     </video>
-    <ul class=" text-white mt-8 ml-4">
+    <div
+      class="hidden md:flex justify-between md:absolute z-20 x-center md:top-25 md:w-4/5 text-white"
+    >
+      <ul class="w-72 mt-40">
+        <li
+          class="flex flex-row-reverse mt-4"
+          v-for="(item, index) in leftList"
+          :key="index"
+        >
+          <span class="px-4 py-2 bg-green-dark">{{ item.label }}</span>
+          <span class="px-4 py-2 bg-gray-aa">{{ item.value }}</span>
+        </li>
+      </ul>
+      <ul class="w-72">
+        <li class="flex  mt-4" v-for="(item, index) in rightList" :key="index">
+          <span class="px-4 py-2 bg-green-dark">{{ item.label }}</span>
+          <span class="px-4 py-2 bg-gray-aa">{{ item.value }}</span>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="md:hidden text-white mt-8 ml-4">
       <li class="flex mt-4" v-for="item in all" :key="item.label">
         <span class="px-4 py-2 bg-green-dark">{{ item.label }}</span>
         <span class="px-4 py-2 bg-gray-aa">{{ item.value }}</span>
@@ -39,6 +60,14 @@ export default {
         { label: '通信距离', value: '5 m(Max.)' },
       ],
     }
+  },
+  computed: {
+    leftList() {
+      return this.all.slice(0, 5)
+    },
+    rightList() {
+      return this.all.slice(5)
+    },
   },
 }
 </script>

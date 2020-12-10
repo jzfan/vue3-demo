@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed right-0 top30vh p-2 bg-gray-f5 rounded-md">
+  <nav class="fixed z-20 right-0 top30vh p-2 bg-gray-f5 rounded-md">
     <ul class="">
       <li v-for="item in all" :key="item.icon">
         <i
