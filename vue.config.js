@@ -1,6 +1,6 @@
 module.exports = {
   lintOnSave: false,
-
+  publicPath: '',
   chainWebpack: (config) => {
     config.module
       .rule('i18n')
