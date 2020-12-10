@@ -20,8 +20,6 @@
 import SwiperCore, { Pagination, A11y } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 
-import 'swiper/swiper.scss'
-import 'swiper/components/pagination/pagination.scss'
 SwiperCore.use([Pagination, A11y])
 
 import videoLi from './intro/videoLi'
