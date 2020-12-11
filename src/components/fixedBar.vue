@@ -66,8 +66,7 @@ export default {
         },
         {
           icon: 'icon-CN_tencentvideo text-blue-DEFAULT',
-          url:
-            'https://mp.weixin.qq.com/s?__biz=MzU3NDgwODg4OQ==&mid=100000022&idx=1&',
+          url: 'http://t.cn/Ai9jObrU',
         },
       ],
     }
