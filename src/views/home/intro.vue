@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import videoLi from './videoLi'
+import videoLi from '@/components/theVideo'
 export default {
   components: { videoLi },
   data() {

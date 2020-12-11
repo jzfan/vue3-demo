@@ -1,5 +1,5 @@
 <template>
-  <section class="relative px-16 pt-2 pb-8" id="app-section">
+  <section class="relative px-16 pt-2 pb-8 zoom-in" id="app-section">
     <vertical-title>应用</vertical-title>
     <swiper
       class="mt-16 pb-8 text-white h-64 w-full"
@@ -7,6 +7,7 @@
       :space-between="30"
       :pagination="{ clickable: true }"
       :centeredSlides="true"
+      :slideToClickedSlide="true"
       :loop="true"
     >
       <swiper-slide v-for="(item, index) in videos" :key="index">
@@ -22,7 +23,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 
 SwiperCore.use([Pagination, A11y])
 
-import videoLi from './intro/videoLi'
+import videoLi from '@/components/theVideo'
 export default {
   components: { videoLi, Swiper, SwiperSlide },
   data() {
@@ -65,7 +66,6 @@ export default {
   computed: {
     perView() {
       let w = document.body.clientWidth
-      console.log(w)
       if (w > 700) {
         return 3
       }
@@ -80,7 +80,7 @@ export default {
 </script>
 
 <style lang="scss">
-#app-section {
+.zoom-in {
   .swiper-container {
     width: 100%;
     height: 100%;
@@ -90,18 +90,8 @@ export default {
     font-size: 18px;
     background: #fff;
 
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
     transition: 300ms;
     transform: scale(0.8);

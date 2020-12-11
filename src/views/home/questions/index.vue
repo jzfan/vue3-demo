@@ -1,15 +1,16 @@
 <template>
   <section
-    class="relative pt-6 pb-8 bg-gray-f5 text-green-dark"
+    class="relative pt-6 pb-8 bg-gray-f5 text-green-dark zoom-in"
     id="que-section"
   >
     <vertical-title class="top-6">问答</vertical-title>
     <swiper
-      class="mt-20 pb-8 text-white w-full"
+      class="mt-20 pb-8 h-64 text-white w-full"
       :slides-per-view="perView"
       :space-between="30"
       :pagination="{ clickable: true }"
-      :centeredSlides="false"
+      :centeredSlides="true"
+      :slideToClickedSlide="true"
       :loop="true"
     >
       <swiper-slide v-for="(item, index) in all" :key="index">
@@ -33,11 +34,12 @@ export default {
       all: [],
     }
   },
+  created() {},
   methods: {},
   computed: {
     perView() {
       let w = document.body.clientWidth
-      console.log(w)
+      //   console.log(w)
       if (w > 700) {
         return 3.5
       }
@@ -54,8 +56,12 @@ export default {
         this.$i18n.locale = newVal
         let url = `/json/questions-${newVal}.json`
         this.axios.get(url).then((res) => {
-          console.log(res)
+          //   console.log(res)
           this.all = res.data
+          this.$nextTick(() => {
+            var mySwiper = this.$el.querySelector('.swiper-container').swiper
+            mySwiper.slidePrev()
+          })
         })
       },
     },

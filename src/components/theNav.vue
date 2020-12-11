@@ -15,17 +15,34 @@
         <div class="hidden md:block">
           <div class="ml-10 flex items-center space-x-4 text-green">
             <span
-              v-for="link in links"
+              v-for="(link, index) in links"
               :key="link.title"
-              class="cursor-pointer px-3 py-2 rounded-md whitespace-nowrap font-medium border  hover:border hover:border-green"
+              class="relative cursor-pointer px-3 py-2 rounded-md whitespace-nowrap font-medium border  hover:border hover:border-green group"
               :class="
                 curPath == link.path
                   ? 'border-green shadow-btn'
                   : 'border-transparent'
               "
-              @click="$router.push(link.path)"
-              >{{ $t(link.title) }}</span
-            >
+              @click="goPath(link.path)"
+              >{{ $t(link.title) }}
+
+              <ul
+                v-if="index == 0"
+                class="pt-6 group-hover:block hidden origin-top absolute top-0 transform translate-y-8 left-0 w-40 rounded-md 
+                opacity-75 bg-black
+                shadow-md py-2 bg-gray-f5 ring-1 ring-black ring-opacity-5 text-lg text-green"
+                role="menu"
+              >
+                <li
+                  v-for="anchor in anchors"
+                  class="px-2 text-left block py-2 hover:bg-gray-aa"
+                  :key="anchor"
+                  @click="goAnchor(anchor)"
+                >
+                  {{ $t(anchor) }}
+                </li>
+              </ul>
+            </span>
 
             <!-- <select v-model="$i18n.locale">
               <option>en</option>
@@ -232,6 +249,7 @@ export default {
     return {
       showMenu: false,
       showFlag: false,
+      showHomeDropdown: true,
       links: [
         { path: '/', title: 'home' },
         { path: '/app', title: 'app' },
@@ -239,6 +257,14 @@ export default {
         { path: '/press', title: 'press' },
         { path: '/about', title: 'about' },
         { path: '/product', title: 'product' },
+      ],
+      anchors: [
+        'product-section',
+        'app-section',
+        'params-section',
+        'pack-section',
+        'que-section',
+        'order-section',
       ],
     }
   },
@@ -266,6 +292,14 @@ export default {
     away() {
       this.showMenu = false
       this.showFlag = false
+    },
+    goAnchor(id) {
+      var anchor = document.querySelector('#' + id)
+      console.log(anchor.offsetTop)
+      window.scrollTo({
+        top: anchor.offsetTop - 48,
+        behavior: 'smooth',
+      })
     },
   },
 }
@@ -295,15 +329,27 @@ export default {
     "sdk": "SDK",
     "press": "Press",
     "about": "About us",
-    "product": "Product Story"
+    "product": "Product Story",
+     "product-section": "Product",
+    "app-section": "Applications",
+    "params-section": "Specifications",
+    "pack-section": "Unboxing",
+    "que-section": "Q&A",
+    "order-section": "Order Now"
   },
   "zh": {
-    "home": "首页",
+    "home": "主页",
     "app": "应用",
     "sdk": "软件支持",
     "press": "媒体报道",
     "about": "关于我们",
-    "product": "产品故事"
+    "product": "产品故事",
+    "product-section": "产品",
+    "app-section": "应用场景",
+    "params-section": "参数",
+    "pack-section": "包装",
+    "que-section": "常见问题",
+    "order-section": "即刻订购"
   }
 }
 </i18n>

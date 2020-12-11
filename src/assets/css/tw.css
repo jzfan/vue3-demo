@@ -45,14 +45,17 @@
 .right-6 {
   right: 1.5rem;
 }
-.right-12 {
-  right: 3rem;
+.right-16 {
+  right: 4rem;
 }
 .bottom-6 {
   bottom: 1.5rem;
 }
 .w-36 {
   width: 9rem;
+}
+.top-6 {
+  top: 1.5rem;
 }
 .top-8 {
   top: 2rem;
@@ -96,8 +99,11 @@
     .w-80 {
       width: 20rem;
     }
-    .top-25 {
-      top: 6.25rem;
+    .top-35 {
+      top: 8.75rem;
+    }
+    .top-20 {
+      top: 5rem;
     }
     .bg-detail {
       background-image: url(/img/sy-4.jpg);

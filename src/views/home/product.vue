@@ -1,5 +1,10 @@
 <template>
-  <section class="relative py-16 bg-green text-white px-2 md:bg-detail">
+  <section
+    class="relative py-16 bg-green text-white px-2 md:bg-detail"
+    id="product-section"
+  >
+    <vertical-title class="top-8">产品</vertical-title>
+
     <div
       class="px-12 text-left md:flex items-center justify-between"
       v-if="all.length"
@@ -116,7 +121,7 @@ export default {
         this.showSub = ''
         let url = `/json/home-${newVal}.json`
         this.axios.get(url).then((res) => {
-          console.log(res)
+          //   console.log(res)
           this.all = res.data.details
         })
       },

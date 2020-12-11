@@ -3,7 +3,7 @@
     <h3 class="text-lg">
       {{ item.ask }}
     </h3>
-    <p class="text-sm">
+    <p class="text-sm mt-6">
       {{ item.answer }}
     </p>
   </div>

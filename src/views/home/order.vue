@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white py-12 relative">
+  <section class="bg-white py-12 relative" id="order-section">
     <vertical-title class="top-8">即刻订购</vertical-title>
     <ul class="flex flex-wrap space-y-10">
       <li

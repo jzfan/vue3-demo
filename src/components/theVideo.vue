@@ -1,5 +1,5 @@
 <template>
-  <li class=" bg-black relative group cursor-pointer" @click="play = !play">
+  <li class=" bg-black relative group cursor-pointer" @click="doPlay">
     <template v-if="!play">
       <img :src="item.cover" class="w-full" alt="" />
       <span
@@ -27,11 +27,23 @@
 
 <script>
 export default {
-  props: ['item'],
+  props: {
+    item: {},
+  },
   data() {
     return {
       play: false,
     }
+  },
+  methods: {
+    doPlay() {
+      this.play = true
+      this.$nextTick(() => {
+        const video = this.$el.querySelector('video')
+        // console.log(video)
+        video.play()
+      })
+    },
   },
 }
 </script>

@@ -3,8 +3,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
-import 'swiper/swiper.scss'
-import 'swiper/components/pagination/pagination.scss'
+import 'swiper/swiper-bundle.min.css'
 
 import '@/assets/css/tw.css'
 import store from './store'

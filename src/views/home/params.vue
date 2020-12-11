@@ -1,18 +1,27 @@
 <template>
-  <section class="relative py-6">
+  <section class="relative py-6 md:pt-6" id="params-section">
     <vertical-title class="top-10">参数</vertical-title>
-    <video playsinline="true" class="video-js vjs-fill" fill="true">
+    <video
+      playsinline="true"
+      webkit-playsinline="true"
+      muted
+      autoplay
+      fill="true"
+    >
       <source
         src="https://oss-main.dextarobotics.com/videos/home/specifications.mp4"
         type="video/mp4"
       />
     </video>
     <div
-      class="hidden md:flex justify-between md:absolute z-20 x-center md:top-25 md:w-4/5 text-white"
+      class="hidden md:flex justify-between 
+      md:absolute z-20 x-center md:top-20 lg:top-35 md:w-4/5
+      lg:w-3/5
+       text-white"
     >
-      <ul class="w-72 mt-40">
+      <ul class="w-72 mt-20 lg:mt-64">
         <li
-          class="flex flex-row-reverse mt-4"
+          class="flex flex-row-reverse mt-4 lg:mt-7"
           v-for="(item, index) in leftList"
           :key="index"
         >
@@ -21,7 +30,11 @@
         </li>
       </ul>
       <ul class="w-72">
-        <li class="flex  mt-4" v-for="(item, index) in rightList" :key="index">
+        <li
+          class="flex  mt-4 lg:mt-7"
+          v-for="(item, index) in rightList"
+          :key="index"
+        >
           <span class="px-4 py-2 bg-green-dark">{{ item.label }}</span>
           <span class="px-4 py-2 bg-gray-aa">{{ item.value }}</span>
         </li>
@@ -60,6 +73,13 @@ export default {
         { label: '通信距离', value: '5 m(Max.)' },
       ],
     }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      const video = this.$el.querySelector('video')
+      console.log(video)
+      video.play()
+    })
   },
   computed: {
     leftList() {
