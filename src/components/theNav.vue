@@ -4,7 +4,7 @@
     :class="showMenu ? 'bg-gray-ed' : 'opacity-75 bg-black'"
     v-click-away="away"
   >
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
       <div class="flex items-center justify-between h-18">
         <div class="flex items-center">
           <div class="flex-shrink-0">
@@ -249,7 +249,6 @@ export default {
     return {
       showMenu: false,
       showFlag: false,
-      showHomeDropdown: true,
       links: [
         { path: '/', title: 'home' },
         { path: '/app', title: 'app' },
@@ -277,12 +276,10 @@ export default {
     setLang(lang) {
       this.$i18n.locale = lang
       this.$store.commit('setLang', lang)
-      this.showFlag = false
-      this.showMenu = false
+      this.hideDropdowns()
     },
     goPath(path) {
-      this.showMenu = false
-      this.showFlag = false
+      this.hideDropdowns()
       this.$router.push(path)
     },
     onShowMenu() {
@@ -290,16 +287,30 @@ export default {
       this.showFlag = false
     },
     away() {
-      this.showMenu = false
-      this.showFlag = false
+      this.hideDropdowns()
     },
     goAnchor(id) {
-      var anchor = document.querySelector('#' + id)
-      console.log(anchor.offsetTop)
-      window.scrollTo({
-        top: anchor.offsetTop - 48,
-        behavior: 'smooth',
-      })
+      this.hideDropdowns()
+
+      if (this.$route.path == '/') {
+        var anchor = document.querySelector('#' + id)
+        //   console.log(anchor.offsetTop)
+        window.scrollTo({
+          top: anchor.offsetTop - 48,
+          behavior: 'smooth',
+        })
+      } else {
+        this.$router.push({
+          name: 'Home',
+          params: {
+            id,
+          },
+        })
+      }
+    },
+    hideDropdowns() {
+      this.showMenu = false
+      this.showFlag = false
     },
   },
 }
@@ -339,7 +350,7 @@ export default {
   },
   "zh": {
     "home": "主页",
-    "app": "应用",
+    "app": "应用场景",
     "sdk": "软件支持",
     "press": "媒体报道",
     "about": "关于我们",

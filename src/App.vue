@@ -1,10 +1,7 @@
 <template>
   <the-layout class="min-h-screen relative">
     <router-view />
-    <fixed-bar />
-    <button class="btn btn-green px-6 fixed z-20 left-4 bottom-4">
-      即刻订购
-    </button>
+    <!-- <fixed-bar /> -->
   </the-layout>
 </template>
 
@@ -17,6 +14,7 @@ export default {
 }
 </script>
 <style>
+@import './assets/css/app.css';
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

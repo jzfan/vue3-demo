@@ -18,11 +18,19 @@ import verticalTitle from '@/components/verticalTitle'
 
 import VueClickAway from 'vue3-click-away'
 
-createApp(App)
+// import video from 'video.js'
+import 'video.js/dist/video-js.min.css'
+
+const app = createApp(App)
   .use(axios)
   .use(i18n)
   .use(store)
   .use(router)
   .use(VueClickAway)
   .component('vertical-title', verticalTitle)
-  .mount('#app')
+
+import mitt from 'mitt'
+app.config.globalProperties.$bus = mitt()
+// app.config.globalProperties.video = video
+
+app.mount('#app')

@@ -37,6 +37,18 @@ export default {
   data() {
     return {}
   },
+  created() {
+    let id = this.$route.params.id
+    if (id) {
+      this.$nextTick(() => {
+        let anchor = document.querySelector('#' + id)
+        window.scrollTo({
+          top: anchor.offsetTop - 48,
+          behavior: 'smooth',
+        })
+      })
+    }
+  },
 }
 </script>
 
