@@ -69,4 +69,33 @@ export default {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+#que-section {
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+    transform: scale(0.8) translateY(-10%);
+  }
+  .swiper-slide-active,
+  .swiper-slide-duplicate-active {
+    transform: scale(1) translateY(0);
+  }
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+</style>

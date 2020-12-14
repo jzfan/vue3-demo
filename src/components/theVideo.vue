@@ -1,5 +1,5 @@
 <template>
-  <li class=" bg-black relative group cursor-pointer" @click="doPlay">
+  <li class=" relative group cursor-pointer" @click="doPlay">
     <template v-if="!play">
       <img :src="item.cover" class="w-full" alt="" />
       <span

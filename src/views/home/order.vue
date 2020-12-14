@@ -13,7 +13,7 @@
           >
             {{ item.detail }}
           </div>
-          <img class="w-36" src="/img/sy-order.jpg" />
+          <img class="w-36" :src="item.img" />
           <div class="mt-6 w-24 h-1 bg-green-dark"></div>
           <div class="mt-5 text-green-dark">{{ item.name }}</div>
         </div>
@@ -68,7 +68,7 @@ export default {
               '[已完成量产，即刻即可购买]主要面对院校，企业等科研机构开放订购，用于早期项目的探索与验证。取决于具体使用场景，采购量和对软件支持的需求，价格会有不同程度的变化。',
           },
           {
-            img: '/img/sy-order.jpg',
+            img: '/img/sy-7.jpg',
             name: '消费版',
             btn: '即将推出',
             detail:

@@ -16,8 +16,8 @@
 
 <script>
 import thisProduct from './product'
-import thisParams from './params'
-import thisPack from './pack'
+import thisParams from './params2'
+import thisPack from './pack2'
 import thisQuestions from './questions/index'
 import thisOrder from './order'
 import thisHeader from './header'

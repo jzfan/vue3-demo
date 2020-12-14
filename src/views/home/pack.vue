@@ -6,10 +6,10 @@
     <vertical-title class="top-8">包装</vertical-title>
 
     <div class="md:flex md:w-5/6 md:mx-auto items-start justify-center">
-      <this-video
-        class="shadow-card w-full md:w-3/4 lg:w-3/5 mb-8 mt-24"
-        :item="video"
-      />
+      <ul class="shadow-card w-full md:w-3/4 lg:w-3/5 mb-8 mt-24">
+        <this-video class="w-full" :item="video" />
+      </ul>
+
       <div
         class="text-left ml-4 text-green-dark w-full md:w-1/4 lg:w-2/5 md:ml-8 lg:ml-24 md:mt-24"
       >
