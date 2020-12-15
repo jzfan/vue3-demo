@@ -360,7 +360,7 @@ export default {
     "params-section": "参数",
     "pack-section": "包装",
     "que-section": "常见问题",
-    "order-section": "即刻订购"
+    "order-section": "联系咨询"
   }
 }
 </i18n>

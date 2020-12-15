@@ -1,6 +1,6 @@
 <template>
   <section class="bg-white py-12 relative" id="order-section">
-    <vertical-title class="top-8">即刻订购</vertical-title>
+    <vertical-title class="top-8">联系咨询</vertical-title>
     <ul class="flex flex-wrap space-y-10">
       <li
         v-for="item in all"

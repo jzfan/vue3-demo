@@ -48,12 +48,12 @@ export default {
   props: ['all'],
   data() {
     return {
-      video: {},
+      //   video: {},
     }
   },
   methods: {
     onShowVideo(video) {
-      //   this.$bus.emit('modal-play', video)
+      this.$bus.emit('modal-play', video)
     },
   },
 }

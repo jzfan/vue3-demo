@@ -8,6 +8,11 @@
         {{ $t('p') }}
       </p>
     </div>
+    <ul class="my-4 w-full sm:w-2/3 mx-auto">
+      <video
+        src="https://dextarobotics-bucket-main.oss-cn-beijing.aliyuncs.com/videos/home/dexmo-promo.mp4"
+      ></video>
+    </ul>
     <ul class="flex flex-wrap shadow-none md:shadow-card mt-12">
       <video-li
         class="md:w-1/3 md:mt-0 mt-4 w-full"

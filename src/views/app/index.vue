@@ -8,13 +8,12 @@
 </template>
 
 <script>
-import thisHeader from './header'
 import thisModal from './modal'
 import zh from './zh'
 import en from './en'
 
 export default {
-  components: { thisHeader, thisModal, zh, en },
+  components: { thisModal, zh, en },
   data() {
     return {
       //   player: null,

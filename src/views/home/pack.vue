@@ -19,7 +19,7 @@
             Dexmo × 2
           </li>
           <li class="mt-2">
-            无线接收器 × 2
+            无线接收器 × 1
           </li>
           <li class="mt-2">
             电源适配器 x 1
@@ -40,7 +40,7 @@
             Oculus 手柄固定器 × 2
           </li>
           <li class="mt-2">
-            手指绑带 × 10 螺丝 × 10
+            螺丝 × 10
           </li>
         </ul>
         <img class="w-64 mt-6" src="/img/sy-6.png" alt="" />
