@@ -9,9 +9,13 @@
       </p>
     </div>
     <ul class="my-4 w-full sm:w-2/3 mx-auto">
-      <video
-        src="https://dextarobotics-bucket-main.oss-cn-beijing.aliyuncs.com/videos/home/dexmo-promo.mp4"
-      ></video>
+      <this-video
+        :item="{
+          cover: '/img/home-1.png',
+          src:
+            'https://dextarobotics-bucket-main.oss-cn-beijing.aliyuncs.com/videos/home/dexmo-promo.mp4',
+        }"
+      />
     </ul>
     <ul class="flex flex-wrap shadow-none md:shadow-card mt-12">
       <video-li
@@ -30,8 +34,9 @@
 
 <script>
 import videoLi from '@/components/theVideo'
+import thisVideo from '@/components/theVideo2'
 export default {
-  components: { videoLi },
+  components: { videoLi, thisVideo },
   data() {
     return {
       videos: [

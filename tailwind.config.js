@@ -51,6 +51,7 @@ module.exports = {
     borderWidth: ['responsive', 'hover', 'focus'],
     backgroundColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
     display: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+    opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
   },
   plugins: [],
 }

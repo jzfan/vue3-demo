@@ -9,17 +9,41 @@
             ></span
           ><span
             ><a
-              class="active__1v1oR"
-              href="/zh-cn/application"
+              class="cursor-pointer"
+              :class="$route.path == '/app' ? 'active__1v1oR' : ''"
+              @click="$router.push('app')"
               style=""
               aria-current="page"
               >应用场景</a
             ></span
-          ><span><a class="" style="" href="/zh-cn/sdk">软件支持</a></span
-          ><span><a class="" style="" href="/zh-cn/press">媒体报道</a></span
-          ><span><a class="" style="" href="/zh-cn/stories">关于我们</a></span
           ><span
-            ><a class="" style="" href="/zh-cn/experience">产品故事</a></span
+            ><a
+              class="cursor-pointer"
+              :class="$route.path == '/sdk' ? 'active__1v1oR' : ''"
+              @click="$router.push('/sdk')"
+              >软件支持</a
+            ></span
+          ><span
+            ><a
+              class="cursor-pointer"
+              :class="$route.path == '/press' ? 'active__1v1oR' : ''"
+              @click="$router.push('/press')"
+              >媒体报道</a
+            ></span
+          ><span
+            ><a
+              :class="$route.path == '/about' ? 'active__1v1oR' : ''"
+              class="cursor-pointer"
+              @click="$router.push('/about')"
+              >关于我们</a
+            ></span
+          ><span
+            ><a
+              class="cursor-pointer"
+              :class="$route.path == '/product' ? 'active__1v1oR' : ''"
+              @click="$router.push('/product')"
+              >产品故事</a
+            ></span
           >
         </div>
       </div>
@@ -30,7 +54,10 @@
           >
         </div>
         <div>
-          <a class="active__1v1oR" aria-current="page" href="/zh-cn/"
+          <a
+            class="active__1v1oR"
+            aria-current="page"
+            @click="$router.push('/')"
             ><svg
               id="svg-logo-2pfGa-G"
               data-name="Layer 1"
@@ -103,15 +130,11 @@
 </template>
 
 <script>
-import logoEn from '@/components/svg/logoEn'
+// import logoEn from '@/components/svg/logoEn'
 export default {
-  components: { logoEn },
+  //   components: { logoEn },
+  methods: {},
 }
 </script>
 
-<style>
-.copyright {
-  background: #232323;
-  color: #565656;
-}
-</style>
+<style></style>

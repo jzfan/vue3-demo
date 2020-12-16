@@ -6740,13 +6740,14 @@ p {
   vertical-align: bottom;
 }
 .video__bVhmv i {
-  opacity: 0.5;
-  color: #fff;
+  /* opacity: 0.5; */
+  /* color: #fff; */
+  color: #000;
   position: absolute;
-  height: 50px;
-  width: 50px;
-  font-size: 2rem;
-  margin: -20px 0 0 -20px;
+  height: 24px;
+  width: 24px;
+  font-size: 1.5rem;
+  margin: -16px 0 0 -8px;
   top: 50%;
   left: 50%;
   z-index: 1;
@@ -8734,9 +8735,9 @@ p {
       from(rgba(0, 0, 0, 0.5)),
       to(rgba(0, 0, 0, 0.5))
     ),
-    url(/0169f0abf76d008a0735f2d64444dd22.png);
+    url(/img/pro-1.png);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/0169f0abf76d008a0735f2d64444dd22.png);
+    url(/img/pro-1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;

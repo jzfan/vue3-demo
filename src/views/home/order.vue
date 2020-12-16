@@ -20,7 +20,7 @@
         <button
           class="mt-4 btn "
           :class="
-            item.disable ? 'disabled bg-gray-f5 text-gray-dark' : 'btn-green'
+            item.disable ? 'disabled bg-gray-ed text-gray-dark' : 'btn-green'
           "
         >
           {{ item.btn }}

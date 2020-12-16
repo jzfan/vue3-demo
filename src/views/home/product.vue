@@ -13,13 +13,13 @@
         <figcaption class="mt-6 text-2xl font-semibold leading-none">
           {{ all[0].title }}
         </figcaption>
-        <template v-for="sub in all[0].ps" :key="sub.subtitle">
+        <template v-for="(sub, index) in all[0].ps" :key="index">
           <h4
             class="mt-2 font-bold text-lg cursor-pointer md:text-green"
-            @click="toggleShowP(sub.subtitle)"
+            @click="toggleShowP('0' + index)"
           >
             <i
-              v-if="showSub != sub.subtitle"
+              v-if="showSubIndex != '0' + index"
               class="iconfont icon-right hidden md:inline-block"
             ></i>
             <i v-else class="iconfont icon-Down-v hidden md:inline-block"></i>
@@ -28,7 +28,7 @@
             </span>
           </h4>
           <transition name="fade">
-            <p v-show="showSub == sub.subtitle">
+            <p v-show="showSubIndex == '0' + index">
               {{ sub.p }}
             </p>
           </transition>
@@ -42,13 +42,13 @@
           <figcaption class="mt-20 text-2xl font-semibold leading-none">
             {{ all[1].title }}
           </figcaption>
-          <template v-for="sub in all[1].ps" :key="sub.subtitle">
+          <template v-for="(sub, index) in all[1].ps" :key="index">
             <h4
               class="mt-2 font-bold text-lg cursor-pointer md:text-green"
-              @click="toggleShowP(sub.subtitle)"
+              @click="toggleShowP('1' + index)"
             >
               <i
-                v-if="showSub != sub.subtitle"
+                v-if="showSubIndex != '1' + index"
                 class="iconfont icon-right hidden md:inline-block"
               ></i>
               <i v-else class="iconfont icon-Down-v hidden md:inline-block"></i>
@@ -57,7 +57,7 @@
               </span>
             </h4>
             <transition name="fade">
-              <p v-show="showSub == sub.subtitle">
+              <p v-show="showSubIndex == '1' + index">
                 {{ sub.p }}
               </p>
             </transition>
@@ -71,13 +71,13 @@
           <figcaption class="mt-20 text-2xl font-semibold leading-none">
             {{ all[2].title }}
           </figcaption>
-          <template v-for="sub in all[2].ps" :key="sub.subtitle">
+          <template v-for="(sub, index) in all[2].ps" :key="index">
             <h4
               class="mt-2 font-bold text-lg cursor-pointer md:text-green"
-              @click="toggleShowP(sub.subtitle)"
+              @click="toggleShowP('2' + index)"
             >
               <i
-                v-if="showSub != sub.subtitle"
+                v-if="showSubIndex != '2' + index"
                 class="iconfont icon-right hidden md:inline-block"
               ></i>
               <i v-else class="iconfont icon-Down-v hidden md:inline-block"></i>
@@ -86,7 +86,7 @@
               </span>
             </h4>
             <transition name="fade">
-              <p v-show="showSub == sub.subtitle">
+              <p v-show="showSubIndex == '2' + index">
                 {{ sub.p }}
               </p>
             </transition>
@@ -105,7 +105,7 @@ export default {
   data() {
     return {
       all: [],
-      showSub: '',
+      showSubIndex: '00',
       images: [
         'https://oss-main.dextarobotics.com/images/home/free-to-use-en.gif',
         'https://oss-main.dextarobotics.com/images/home/truly-intuitive-natural-interaction-en.gif',
@@ -118,7 +118,7 @@ export default {
       immediate: true,
       handler: function(newVal) {
         this.$i18n.locale = newVal
-        this.showSub = ''
+        this.showSubIndex = '00'
         let url = `/json/home-${newVal}.json`
         this.axios.get(url).then((res) => {
           //   console.log(res)
@@ -128,8 +128,8 @@ export default {
     },
   },
   methods: {
-    toggleShowP(sub) {
-      this.showSub = this.showSub == sub ? '' : sub
+    toggleShowP(index) {
+      this.showSubIndex = this.showSubIndex == index ? '' : index
     },
   },
 }
