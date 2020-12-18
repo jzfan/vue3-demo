@@ -44,7 +44,7 @@ export default {
   created() {
     this.$bus.on('modal-play', (item) => {
       this.show = true
-      console.log(item.title)
+      //   console.log(item.title)
       this.playVideo(item)
     })
   },
@@ -82,6 +82,7 @@ export default {
   beforeUnmount() {
     if (this.player) {
       this.player.dispose()
+      this.$bus.all.clear()
     }
   },
 }

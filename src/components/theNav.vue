@@ -37,7 +37,7 @@
                   v-for="anchor in anchors"
                   class="px-2 text-left block py-2 hover:bg-gray-aa"
                   :key="anchor"
-                  @click="goAnchor(anchor)"
+                  @click.stop="goAnchor($event, anchor)"
                 >
                   {{ $t(anchor) }}
                 </li>
@@ -289,7 +289,8 @@ export default {
     away() {
       this.hideDropdowns()
     },
-    goAnchor(id) {
+    goAnchor(e, id) {
+      e.preventDefault()
       this.hideDropdowns()
       //   console.log('cur path: ', this.curPath)
       if (this.curPath == '/') {

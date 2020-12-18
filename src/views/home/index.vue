@@ -39,8 +39,13 @@ export default {
   },
   created() {
     this.$bus.on('scroll-id', (id) => {
-      //   console.log(id)
-      this.scrollById(id)
+      console.log('scroll anchor: ', id)
+      var anchor = document.querySelector('#' + id)
+      window.scrollTo({
+        top: anchor.offsetTop - 48,
+        behavior: 'smooth',
+      })
+      //   this.scrollById(id)
     })
 
     let id = this.$route.params.anchor_id
@@ -58,6 +63,9 @@ export default {
         })
       })
     },
+  },
+  beforeUnmount() {
+    this.$bus.all.clear()
   },
 }
 </script>
