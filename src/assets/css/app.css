@@ -4812,7 +4812,7 @@ footer {
   position: relative;
   width: 100%;
   background: #262626;
-  z-index: 50;
+  z-index: 40;
 }
 footer .container__2zaSh {
   width: 100%;
@@ -5991,7 +5991,7 @@ p {
 @media only screen and (min-width: 993px) {
   .productSectionV2__3xNzZ {
     min-height: 100vh;
-    background-image: url(/4cc1d586ebd25a7ef13114378d8516b2.jpg) !important;
+    background-image: url(/img/sy-4.jpg) !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: 50% !important;

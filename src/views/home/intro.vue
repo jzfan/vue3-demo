@@ -27,8 +27,11 @@
     </ul>
   </section>
 
-  <button class="btn btn-green px-6 fixed z-20 left-4 bottom-4">
-    即刻订购
+  <button
+    @click="$router.push('/contact')"
+    class="btn btn-green px-6 fixed z-20 left-4 bottom-4"
+  >
+    联系咨询
   </button>
 </template>
 

@@ -197,17 +197,17 @@
             <div class="peopleAndTeamTitleContainer__30ihV">
               <div class="teamTitle__JZazN"><h3></h3></div>
               <div class="people__rn6L3">
-                <img src="/img/team-2.jpg" />
+                <img src="/img/team-22.jpg" />
                 <div class="">
-                  <h3 class="name__3qBij">Per Ola Kristensson</h3>
-                  <span class="">技术顾问</span>
+                  <h3 class="name__3qBij">王党校</h3>
+                  <span class="">学术顾问</span>
                 </div>
                 <div class="descriptionContainer__TOnhq">
                   <p class="description__LsTbO">
-                    计算机科学家，领导剑桥大学工程系智能交互系统小组
+                    <!-- 计算机科学家，领导剑桥大学工程系智能交互系统小组
                     曾任IBM的高级研究员，成功的创业者，创办公司Shapewriter曾被谷歌，苹果，Nuance争相收购
                     2013年《MIT科技评论》全球35位35岁以下青年创变者 2014年 ACM
-                    UIST 持续影响力奖
+                    UIST 持续影响力奖 -->
                   </p>
                 </div>
               </div>
@@ -306,15 +306,15 @@
             <div class="peopleAndTeamTitleContainer__30ihV">
               <div class="teamTitle__JZazN"><h3>软件工程师</h3></div>
               <div class="people__rn6L3">
-                <img src="/img/team-14.jpg" />
+                <img src="/img/team-23.jpg" />
                 <div class="">
-                  <h3 class="text-lg font-bold name__3qBij">张逸飞</h3>
-                  <span class="">软件工程师</span>
+                  <h3 class="text-lg font-bold name__3qBij">张孜</h3>
+                  <span class="">市场</span>
                 </div>
                 <div class="descriptionContainer__TOnhq">
                   <p class="description__LsTbO">
-                    全栈计算机科学家，软件架构师 计算机科学 @ 加州大学圣迭戈分校
-                    曾任职于微软
+                    <!-- 全栈计算机科学家，软件架构师 计算机科学 @ 加州大学圣迭戈分校
+                    曾任职于微软 -->
                   </p>
                 </div>
               </div>
@@ -406,10 +406,26 @@
             <div class="peopleAndTeamTitleContainer__30ihV">
               <div class="teamTitle__JZazN"><h3></h3></div>
               <div class="people__rn6L3">
-                <img src="/img/team-20.jpg" />
+                <img src="/img/team-24.jpg" />
                 <div class="">
-                  <h3 class="text-lg font-bold name__3qBij">李罡</h3>
-                  <span class="">软件工程师（实习）</span>
+                  <h3 class="text-lg font-bold name__3qBij">欧政熠</h3>
+                  <span class="">软件工程师（2019届）</span>
+                </div>
+                <div class="descriptionContainer__TOnhq">
+                  <p class="description__LsTbO">
+                    <!-- 计算机科学家、研究者 计算机视觉专家 娴熟的电子软件工程师
+                    物理学本科，自动化硕士 @ 清华大学 -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="peopleAndTeamTitleContainer__30ihV">
+              <div class="teamTitle__JZazN"><h3></h3></div>
+              <div class="people__rn6L3">
+                <img src="/img/team-25.jpg" />
+                <div class="">
+                  <h3 class="text-lg font-bold name__3qBij">周然</h3>
+                  <span class="">设计师（2019届）</span>
                 </div>
                 <div class="descriptionContainer__TOnhq">
                   <p class="description__LsTbO">
@@ -422,15 +438,15 @@
             <div class="peopleAndTeamTitleContainer__30ihV">
               <div class="teamTitle__JZazN"><h3></h3></div>
               <div class="people__rn6L3">
-                <img src="/img/team-20.jpg" />
+                <img src="/img/team-26.jpg" />
                 <div class="">
-                  <h3 class="text-lg font-bold name__3qBij">李罡</h3>
-                  <span class="">软件工程师（实习）</span>
+                  <h3 class="text-lg font-bold name__3qBij">王世龙</h3>
+                  <span class="">嵌入式工程师（2019届）</span>
                 </div>
                 <div class="descriptionContainer__TOnhq">
                   <p class="description__LsTbO">
-                    计算机科学家、研究者 计算机视觉专家 娴熟的电子软件工程师
-                    物理学本科，自动化硕士 @ 清华大学
+                    <!-- 计算机科学家、研究者 计算机视觉专家 娴熟的电子软件工程师
+                    物理学本科，自动化硕士 @ 清华大学 -->
                   </p>
                 </div>
               </div>
@@ -438,15 +454,15 @@
             <div class="peopleAndTeamTitleContainer__30ihV">
               <div class="teamTitle__JZazN"><h3></h3></div>
               <div class="people__rn6L3">
-                <img src="/img/team-20.jpg" />
+                <img src="/img/team-27.jpg" />
                 <div class="">
-                  <h3 class="text-lg font-bold name__3qBij">李罡</h3>
-                  <span class="">软件工程师（实习）</span>
+                  <h3 class="text-lg font-bold name__3qBij">陈美羲</h3>
+                  <span class="">软件工程师（2019届）</span>
                 </div>
                 <div class="descriptionContainer__TOnhq">
                   <p class="description__LsTbO">
-                    计算机科学家、研究者 计算机视觉专家 娴熟的电子软件工程师
-                    物理学本科，自动化硕士 @ 清华大学
+                    <!-- 计算机科学家、研究者 计算机视觉专家 娴熟的电子软件工程师
+                    物理学本科，自动化硕士 @ 清华大学 -->
                   </p>
                 </div>
               </div>
@@ -454,31 +470,15 @@
             <div class="peopleAndTeamTitleContainer__30ihV">
               <div class="teamTitle__JZazN"><h3></h3></div>
               <div class="people__rn6L3">
-                <img src="/img/team-20.jpg" />
+                <img src="/img/team-28.jpg" />
                 <div class="">
-                  <h3 class="text-lg font-bold name__3qBij">李罡</h3>
-                  <span class="">软件工程师（实习）</span>
+                  <h3 class="text-lg font-bold name__3qBij">任城杰</h3>
+                  <span class="">软件工程师（2019届）</span>
                 </div>
                 <div class="descriptionContainer__TOnhq">
                   <p class="description__LsTbO">
-                    计算机科学家、研究者 计算机视觉专家 娴熟的电子软件工程师
-                    物理学本科，自动化硕士 @ 清华大学
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="peopleAndTeamTitleContainer__30ihV">
-              <div class="teamTitle__JZazN"><h3></h3></div>
-              <div class="people__rn6L3">
-                <img src="/img/team-20.jpg" />
-                <div class="">
-                  <h3 class="text-lg font-bold name__3qBij">李罡</h3>
-                  <span class="">软件工程师（实习）</span>
-                </div>
-                <div class="descriptionContainer__TOnhq">
-                  <p class="description__LsTbO">
-                    计算机科学家、研究者 计算机视觉专家 娴熟的电子软件工程师
-                    物理学本科，自动化硕士 @ 清华大学
+                    <!-- 计算机科学家、研究者 计算机视觉专家 娴熟的电子软件工程师
+                    物理学本科，自动化硕士 @ 清华大学 -->
                   </p>
                 </div>
               </div>

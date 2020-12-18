@@ -4,7 +4,10 @@
       <div class="left__3W-3e">
         <div class="nav__2GOMa">
           <span
-            ><a class="active__1v1oR" aria-current="page" href="/zh-cn/"
+            ><a
+              class="active__1v1oR"
+              aria-current="page"
+              @click="$router.push('/')"
               >主页</a
             ></span
           ><span

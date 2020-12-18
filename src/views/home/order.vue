@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white py-12 relative" id="order-section">
     <vertical-title class="top-8">联系咨询</vertical-title>
-    <ul class="flex flex-wrap space-y-10">
+    <ul class="flex flex-wrap md:space-y-0 space-y-10 lg:w-1/2 mx-auto">
       <li
         v-for="item in all"
         :key="item.name"
@@ -18,9 +18,12 @@
           <div class="mt-5 text-green-dark">{{ item.name }}</div>
         </div>
         <button
+          @click="item.disable || $router.push('/contact')"
           class="mt-4 btn "
           :class="
-            item.disable ? 'disabled bg-gray-ed text-gray-dark' : 'btn-green'
+            item.disable
+              ? 'appearance-none bg-gray-ed text-gray-dark'
+              : 'btn-green'
           "
         >
           {{ item.btn }}
@@ -50,20 +53,20 @@ export default {
     '$store.state.lang': {
       immediate: true,
       handler: function(newVal) {
-        console.log('order: ', newVal)
+        // console.log('order: ', newVal)
         // if (newVal == 'zh') {
         this.all = [
           {
             img: '/img/sy-order.jpg',
             name: '开发版',
-            btn: '即刻购买',
+            btn: '联系咨询',
             detail:
               '[已完成量产，即刻即可购买]主要面对院校，企业等科研机构开放订购，用于早期项目的探索与验证。取决于具体使用场景，采购量和对软件支持的需求，价格会有不同程度的变化。',
           },
           {
             img: '/img/sy-order.jpg',
             name: '企业版',
-            btn: '立即购买',
+            btn: '联系咨询',
             detail:
               '[已完成量产，即刻即可购买]主要面对院校，企业等科研机构开放订购，用于早期项目的探索与验证。取决于具体使用场景，采购量和对软件支持的需求，价格会有不同程度的变化。',
           },

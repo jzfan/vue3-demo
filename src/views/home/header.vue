@@ -11,7 +11,7 @@
       <div class="mt-4">
         <button
           class="px-8 py-2 border-white border rounded hover:border-green hover:text-green"
-          @click="change"
+          @click="$router.push('/product')"
         >
           >> {{ $t('btn') }}
         </button>

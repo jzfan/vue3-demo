@@ -1,5 +1,5 @@
 <template>
-  <div id="main" class="text-left text-white">
+  <div id="app-section" class="text-left text-white bg-white">
     <div class="applicationPage__1pEBM">
       <component :is="contentOfLang"></component>
     </div>

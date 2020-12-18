@@ -1,11 +1,14 @@
 <template>
-  <li class=" relative group cursor-pointer" @click="doPlay">
+  <li
+    class="relative group cursor-pointer flex items-end bg-black"
+    @click="doPlay"
+  >
     <template v-if="!play">
       <img :src="item.cover" class="w-full" alt="" />
       <span
         class="absolute hidden xy-center w-12 h-12 rounded-full bg-white group-hover:flex items-center justify-center"
       >
-        <i class="iconfont icon-play text-xl ml-1"></i>
+        <i class="iconfont icon-play  ml-1"></i>
       </span>
     </template>
     <video

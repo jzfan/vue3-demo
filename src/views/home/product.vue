@@ -1,15 +1,16 @@
 <template>
   <section
-    class="relative py-16 bg-green text-white px-2 md:bg-detail"
+    class="relative py-16 overflow-hidden bg-green md:bg-white text-white px-2"
     id="product-section"
   >
+    <img class="absolute inset-0 py-16 w-full" src="/img/sy-4.jpg" alt="" />
     <vertical-title class="top-8">产品</vertical-title>
 
     <div
-      class="px-12 text-left md:flex items-center justify-between"
+      class="relative z-30 w-full px-12 text-left md:flex items-center justify-between"
       v-if="all.length"
     >
-      <figure class="md:w-80">
+      <figure class="md:w-80 lg:-mt-24">
         <figcaption class="mt-6 text-2xl font-semibold leading-none">
           {{ all[0].title }}
         </figcaption>
@@ -28,7 +29,7 @@
             </span>
           </h4>
           <transition name="fade">
-            <p v-show="showSubIndex == '0' + index">
+            <p class="text-sm" v-show="showSubIndex == '0' + index">
               {{ sub.p }}
             </p>
           </transition>
@@ -38,7 +39,7 @@
         </div>
       </figure>
       <div>
-        <figure class="md:w-80 md:-ml-8">
+        <figure class="md:w-80 md:-ml-8 md:-mt-16">
           <figcaption class="mt-20 text-2xl font-semibold leading-none">
             {{ all[1].title }}
           </figcaption>
@@ -57,7 +58,7 @@
               </span>
             </h4>
             <transition name="fade">
-              <p v-show="showSubIndex == '1' + index">
+              <p class="text-sm" v-show="showSubIndex == '1' + index">
                 {{ sub.p }}
               </p>
             </transition>
@@ -86,7 +87,7 @@
               </span>
             </h4>
             <transition name="fade">
-              <p v-show="showSubIndex == '2' + index">
+              <p class="text-sm" v-show="showSubIndex == '2' + index">
                 {{ sub.p }}
               </p>
             </transition>

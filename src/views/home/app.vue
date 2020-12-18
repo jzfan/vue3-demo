@@ -1,5 +1,5 @@
 <template>
-  <section class="relative px-16 pt-2 pb-8 zoom-in" id="app-section">
+  <section class="relative px-16 pt-2 pb-8 zoom-in bg-white" id="app-section">
     <vertical-title>应用</vertical-title>
     <swiper
       class="mt-16 pb-8 text-white h-64 w-full"

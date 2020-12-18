@@ -15,8 +15,8 @@
 </template>
 
 <script>
-import thisProduct from './product'
-import thisParams from './params2'
+import thisProduct from './product2'
+import thisParams from './params/index'
 import thisPack from './pack2'
 import thisQuestions from './questions/index'
 import thisOrder from './order'
@@ -38,16 +38,26 @@ export default {
     return {}
   },
   created() {
-    let id = this.$route.params.id
+    this.$bus.on('scroll-id', (id) => {
+      //   console.log(id)
+      this.scrollById(id)
+    })
+
+    let id = this.$route.params.anchor_id
     if (id) {
+      this.scrollById(id)
+    }
+  },
+  methods: {
+    scrollById(id) {
       this.$nextTick(() => {
-        let anchor = document.querySelector('#' + id)
+        var anchor = document.querySelector('#' + id)
         window.scrollTo({
           top: anchor.offsetTop - 48,
           behavior: 'smooth',
         })
       })
-    }
+    },
   },
 }
 </script>

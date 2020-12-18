@@ -7,7 +7,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
       <div class="flex items-center justify-between h-18">
         <div class="flex items-center">
-          <div class="flex-shrink-0">
+          <div class="flex-shrink-0 cursor-pointer" @click="$router.push('/')">
             <logo-zh v-if="$store.state.lang == 'zh'" />
             <logo-en v-else />
           </div>
@@ -291,19 +291,14 @@ export default {
     },
     goAnchor(id) {
       this.hideDropdowns()
-
+      //   console.log(this.curPath)
       if (this.$route.path == '/') {
-        var anchor = document.querySelector('#' + id)
-        //   console.log(anchor.offsetTop)
-        window.scrollTo({
-          top: anchor.offsetTop - 48,
-          behavior: 'smooth',
-        })
+        this.$bus.emit('scroll-id', id)
       } else {
         this.$router.push({
           name: 'Home',
           params: {
-            id,
+            anchor_id: id,
           },
         })
       }

@@ -76,9 +76,9 @@ export default {
   },
   mounted() {
     this.$nextTick(() => {
-      const video = this.$el.querySelector('video')
-      console.log(video)
-      video.play()
+      //   const video = this.$el.querySelector('video')
+      //   console.log(video)
+      //   video.play()
     })
   },
   computed: {
@@ -89,6 +89,8 @@ export default {
       return this.all.slice(5)
     },
   },
+  mounted() {},
+  methods: {},
 }
 </script>
 

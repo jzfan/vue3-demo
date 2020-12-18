@@ -59,4 +59,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+#app-section .videoThumbnail__17_-H i {
+  color: white;
+}
+</style>

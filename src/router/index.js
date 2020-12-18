@@ -37,6 +37,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "product" */ '../views/product/index.vue'),
   },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: () =>
+      import(/* webpackChunkName: "contact" */ '../views/contact'),
+  },
 ]
 
 const router = createRouter({
@@ -47,8 +53,9 @@ const router = createRouter({
 router.afterEach((to, from) => {
   if (to.name) {
     store.commit('setCurPath', to.fullPath)
-  } else {
-    // console.log(to)
+  }
+  if (!to.params.hasOwnProperty('anchor_id')) {
+    window.scrollTo(0, 0)
   }
 })
 export default router
