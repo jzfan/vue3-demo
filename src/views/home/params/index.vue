@@ -130,22 +130,20 @@ export default {
     // },
   },
   watch: {
-    '$store.state.lang'(val) {
-      this.$i18n.locale = val
+    '$store.state.lang'(newVal) {
+      this.$i18n.locale = newVal
     },
   },
 }
 </script>
 
-<style></style>
-
 <i18n>
 {
-    "en": {
+  "en": {
         "pdf": "specifications_en-us.pdf"
-    },
-    "zh": {
-        "en": "specifications_zh-cn.pdf"
-    }
+  },
+  "zh": {
+        "pdf": "specifications_zh-cn.pdf"
+  }
 }
 </i18n>

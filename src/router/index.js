@@ -54,7 +54,8 @@ router.afterEach((to, from) => {
   if (to.name) {
     store.commit('setCurPath', to.fullPath)
   }
-  if (!to.params.hasOwnProperty('anchor_id')) {
+  if (!from.params.hasOwnProperty('anchor_id')) {
+    // console.log(from.params)
     window.scrollTo(0, 0)
   }
 })

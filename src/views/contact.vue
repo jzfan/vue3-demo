@@ -53,8 +53,4 @@ export default {
 }
 </script>
 
-<style>
-.contact {
-  background: '/img/bg-contact.jpg';
-}
-</style>
+<style></style>

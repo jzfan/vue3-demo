@@ -291,8 +291,8 @@ export default {
     },
     goAnchor(id) {
       this.hideDropdowns()
-      //   console.log(this.curPath)
-      if (this.$route.path == '/') {
+      //   console.log('cur path: ', this.curPath)
+      if (this.curPath == '/') {
         this.$bus.emit('scroll-id', id)
       } else {
         this.$router.push({

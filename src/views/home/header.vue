@@ -32,7 +32,7 @@
 export default {
   watch: {
     '$store.state.lang'(newVal, oldVal) {
-      console.log(newVal)
+      //   console.log(newVal)
       this.$i18n.locale = newVal
     },
   },
