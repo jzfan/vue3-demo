@@ -6,7 +6,7 @@
       <this-product />
       <this-app />
       <this-params />
-      <div class="md:hidden h-2 w-full bg-green-dark"></div>
+      <!-- <div class="md:hidden h-2 w-full bg-green-dark"></div> -->
       <this-pack />
       <this-questions />
       <this-order />

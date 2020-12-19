@@ -18,7 +18,6 @@ import verticalTitle from '@/components/verticalTitle'
 
 import VueClickAway from 'vue3-click-away'
 
-// import video from 'video.js'
 import 'video.js/dist/video-js.min.css'
 
 const app = createApp(App)
@@ -31,6 +30,5 @@ const app = createApp(App)
 
 import mitt from 'mitt'
 app.config.globalProperties.$bus = mitt()
-// app.config.globalProperties.video = video
 
 app.mount('#app')

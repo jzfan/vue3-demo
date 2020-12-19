@@ -1,5 +1,5 @@
 <template>
-  <div v-if="show" class="fixed z-50 inset-0 overflow-y-auto">
+  <div v-if="show" class="fixed z-50 inset-0 overflow-y-auto" id="app-modal">
     <i
       class="iconfont icon-close absolute top-0 left-0 cursor-pointer hover:text-white text-2xl text-gray-aa mt-4 ml-4 p-2 z-30"
       @click="show = false"
@@ -51,7 +51,7 @@ export default {
 
   methods: {
     playVideo(option) {
-      console.log(option)
+      //   console.log(option)
       this.$nextTick(() => {
         console.log(this.$refs.videoPlayer)
         this.player = videojs(
@@ -88,4 +88,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+#app-modal .vjs-big-play-button {
+  display: none;
+}
+</style>

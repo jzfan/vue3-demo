@@ -291,8 +291,9 @@ export default {
     },
     goAnchor(e, id) {
       e.preventDefault()
-      this.hideDropdowns()
+      //   this.hideDropdowns()
       //   console.log('cur path: ', this.curPath)
+      console.log('nav to :', id)
       if (this.curPath == '/') {
         this.$bus.emit('scroll-id', id)
       } else {

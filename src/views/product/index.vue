@@ -414,7 +414,7 @@
 
 <script>
 import thisHeader from './header'
-import thisVideo from '@/components/theVideo2'
+import thisVideo from '@/components/theVideo'
 export default {
   components: { thisHeader, thisVideo },
   methods: {

@@ -1,6 +1,6 @@
 <template>
   <header class="header__2s37P">
-    <video autoplay="true" id="myVideo" class="w-full object-cover">
+    <video autoplay="true" id="myVideo" muted class="w-full object-cover">
       <source
         src="https://oss-main.dextarobotics.com/videos/application/banner.mp4"
         type="video/mp4"

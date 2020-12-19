@@ -51,10 +51,11 @@ const router = createRouter({
 })
 
 router.afterEach((to, from) => {
+  //   console.log(to.path)
   if (to.name) {
     store.commit('setCurPath', to.fullPath)
   }
-  if (!from.params.hasOwnProperty('anchor_id')) {
+  if (!from.params.hasOwnProperty('anchor_id') || to.path != '/') {
     // console.log(from.params)
     window.scrollTo(0, 0)
   }

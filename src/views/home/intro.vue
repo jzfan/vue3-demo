@@ -9,7 +9,7 @@
       </p>
     </div>
     <ul class="my-4 w-full sm:w-2/3 mx-auto">
-      <this-video
+      <video-li
         :item="{
           cover: '/img/home-1.png',
           src:
@@ -19,7 +19,7 @@
     </ul>
     <ul class="flex flex-wrap shadow-none md:shadow-card mt-12">
       <video-li
-        class="md:w-1/3 md:mt-0 mt-4 w-full"
+        class="md:w-1/3 md:mt-0 mt-4 w-full bg-black"
         v-for="(item, index) in videos"
         :key="index"
         :item="item"
@@ -37,9 +37,9 @@
 
 <script>
 import videoLi from '@/components/theVideo'
-import thisVideo from '@/components/theVideo2'
+// import thisVideo from '@/components/theVideo2'
 export default {
-  components: { videoLi, thisVideo },
+  components: { videoLi },
   data() {
     return {
       videos: [
