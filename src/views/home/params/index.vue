@@ -65,7 +65,6 @@
         ripple="true"
         class="mdc-button mdc-button--raised mdc-ripple-upgraded"
         :href="'/' + $t('pdf')"
-        download="specifications.pdf"
         target="__blank"
       >
         > 下载规格书

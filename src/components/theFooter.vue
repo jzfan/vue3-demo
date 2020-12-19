@@ -58,8 +58,9 @@
         </div>
         <div>
           <a
-            class="active__1v1oR"
+            class="active__1v1oR cursor-pointer"
             aria-current="page"
+            title="logo"
             @click="$router.push('/')"
             ><svg
               id="svg-logo-2pfGa-G"
