@@ -1,0 +1,145 @@
+[
+  {
+    "ask": "Will Dexmo come with gloves to make it easy to wear?",
+    "answer": "Alternative methods such as fingertip covers and gloves are also developed in house. However, the reason we decide to ship with the current design of using stripes as fixtures is mainly for hygiene and hand sizes adoption concerns. Gloves are good for putting on and off for one person but since most of our customers now require constant fitting for different users, we are not shipping Dexmo with glove at this stage. However, we have this reserved as custom features for clients with large quantity orders."
+  },
+
+  {
+    "ask": "What is the current price of the Dexmo Development Kit?",
+    "answer": "Currently we have not announced the exact retail price. For our business edition, we develop specific business cooperation with our clients from different industries and research institutions and the unit price varies case by case. If you are interested in purchasing Dexmo, please contact our sales team for further details."
+  },
+
+  {
+    "ask": "Will you be making a consumer version for the public?",
+    "answer": "Yes. Our goal is not only to build the easiest to use glove for the industries, but also for the general consumers as well. However due to the economy of scale there will be some time before we can start selling products directly to personal buyers. We are steadily moving towards that goal, just be patient :)"
+  },
+
+  {
+    "ask": "Could I test Dexmo?",
+    "answer": "Yes. We offer trials all over the globe. Besides the various VR events we attend (which will be shown on the Home page of our website if there is any coming event), You are also welcomed to come and visit us at our offices. Our HQ is in Shenzhen, China. Another two oversea offices are in Cambridge-shire, England and Palo Alto, CA, US. You can book a visit by emailing us and our sales repetitiveness will assist you with your booking."
+  },
+
+  {
+    "ask": "How is it different from other VR gloves?",
+    "answer": "In comparison to the IMU based, flex sensor based or optical based tracking-only solutions, Dexmo offers an unprecedented level of immersion with its unique force feedback technology. In comparison to other force feedback gloves, Dexmo is the world’s first wireless, light weight, dual hand glove ever produced. With the support of the versatile hand interaction physics engine we developed, it offers the most compelling force feedback experience."
+  },
+
+  {
+    "ask": "How is force feedback achieved?",
+    "answer": "Dexmo captures your hand motion and sends the data to the avatar in the VR world. When your avatar’s hand touches a virtual object, our grasping-handling software springs into action. It computes the direction and amplitude of the force applied to the five fingertips in each hand. Dexmo provides variable force feedback, allowing you to experience the object in real time. Turn a virtual knob; pull a lever; open a door. You're in a virtual environment that feels like reality."
+  },
+
+  {
+    "ask": "What is variable stiffness? How do I set stiffness for objects in a virtual environment?",
+    "answer": "With precise control of position and force, Dexmo can simulate force feedback of virtual objects much like a virtual spring does with computer-controllable stiffness. For example, Dexmo allows its users feel the difference between grasping a virtual stone or squeezing a virtual rubber duck. The stiffness can be set within the plug-in we built for Unity or UE4, via our easy-to-use SDK."
+  },
+
+  {
+    "ask": "Does Dexmo include position tracking? If so, how is that accomplished?",
+
+    "answer": "Dexmo captures 11 degrees of freedom (DoF) of hand motions, including the splitting and bending of each finger with an extra Dof of the thumb rotation. The tracking does not rely on IMU data but uses rotational sensors, meaning it will not be affected by magnetic fields thus produces much more reliable data."
+  },
+
+  {
+    "ask": "How is Dexmo spatially tracked in 3D? What tracking systems are Dexmo compatible to?",
+
+    "answer": "For position tracking in 3D space, Dexmo can share the  6dof position data from almost any existing tracking  systems such as the Opti-track tracking solution, Oculus  tracking solution, Sony PSVR, or the Vive Lighthouse  tracking solution. It achieves spatial tracking via  attacking trackers or tracked controllers to its body via  a changeable mount. As long as there is a 6dof data input,  Dexmo is compatible with that tracking system."
+  },
+
+  {
+    "ask": "What Head mounted displays and developing platforms are  Dexmo compatible to?",
+
+    "answer": "Dexmo’s SDKs support Unity 3D (based on C#) and Unreal (based on C++) engines. Dexmo is compatible to all Unity/UE4 projects, not a specific headset. In theory every high-end VR/MR headset is supported. It supports almost all the mainstream HMDs such as the Oculus CV1, DK2, Vive, Vive Pro, PSVR, and even the HoloLens, Microsoft MR headsets etc. However, the physical mounts for different trackers are needed. The Dexmo DK1 comes with mounts for Oculus CV1 controller, the Vive tracker, the Vive Controller."
+  },
+
+  {
+    "ask": "Does it work for all hand sizes?",
+    "answer": "Dexmo fits the size of majority of people’s hands withadjustable palm straps and finger straps, butstatistically speaking, wearable devices can never cover100% of the populations. Ones with exceptionally small orbig hands may suffer from limited moving range. If you areunsure about your hand sizes, you may check with us byemail."
+  },
+
+  {
+    "ask": "Is calibration for hand required? Is it needed every time?",
+    "answer": "Yes, for best experience we recommend calibration. For one person you only need to calibrate once. Our program will make note of your hand sizes and you only need to select your hand profile to restart. Alternatively, for the ease of use and time saving, you may also select our preset hand models which will roughly fit your hand shape."
+  },
+
+  {
+    "ask": "Will Dexmo come with gloves to make it easy to wear?",
+    "answer": "Alternative methods such as fingertip covers and gloves are also developed in house. However, the reason we decide to ship with the current design of using stripes as fixtures is mainly for hygiene and hand sizes adoption concerns. Gloves are good for putting on and off for one person but since most of our customers now require constant fitting for different users, we are not shipping Dexmo with glove at this stage. However, we have this reserved as custom features for clients with large quantity orders."
+  },
+
+  {
+    "ask": "What is the current price of the Dexmo Development Kit?",
+    "answer": "Currently we have not announced the exact retail price. For our business edition, we develop specific business cooperation with our clients from different industries and research institutions and the unit price varies case by case. If you are interested in purchasing Dexmo, please contact our sales team for further details."
+  },
+
+  {
+    "ask": "Will you be making a consumer version for the public?",
+    "answer": "Yes. Our goal is not only to build the easiest to use  glove for the industries, but also for the general  consumers as well. However due to the economy of scale  there will be some time before we can start selling  products directly to personal buyers. We are steadily  moving towards that goal, just be patient :)"
+  },
+
+  {
+    "ask": "Could I test Dexmo?",
+    "answer": "Yes. We offer trials all over the globe. Besides the various VR events we attend (which will be shown on the Home page of our website if there is any coming event), You are also welcomed to come and visit us at our offices. Our HQ is in Shenzhen, China. Another two oversea offices are in Cambridge-shire, England and Palo Alto, CA, US. You can book a visit by emailing us and our sales repetitiveness will assist you with your booking."
+  },
+
+  {
+    "ask": "How is it different from other VR gloves?",
+    "answer": "In comparison to the IMU based, flex sensor based or optical based tracking-only solutions, Dexmo offers an unprecedented level of immersion with its unique force feedback technology. In comparison to other force feedback gloves, Dexmo is the world’s first wireless, light weight, dual hand glove ever produced. With the support of the versatile hand interaction physics engine we developed, it offers the most compelling force feedback experience."
+  },
+
+  {
+    "ask": "How is force feedback achieved?",
+    "answer": "Dexmo captures your hand motion and sends the data to the  avatar in the VR world. When your avatar’s hand touches a  virtual object, our grasping-handling software springs  into action. It computes the direction and amplitude of  the force applied to the five fingertips in each hand.  Dexmo provides variable force feedback, allowing you to  experience the object in real time. Turn a virtual knob; pull a lever; open a door. You're in a virtual environment that feels like reality."
+  },
+
+  {
+    "ask": "What is variable stiffness? How do I set stiffness for objects in a virtual environment?",
+
+    "answer": "With precise control of position and force, Dexmo can simulate force feedback of virtual objects much like a virtual spring does with computer-controllable stiffness. For example, Dexmo allows its users feel the difference between grasping a virtual stone or squeezing a virtual rubber duck. The stiffness can be set within the plug-in we built for Unity or UE4, via our easy-to-use SDK."
+  },
+
+  {
+    "ask": "Does Dexmo include position tracking? If so, how is that accomplished?",
+    "answer": "Dexmo captures 11 degrees of freedom (DoF) of hand motions, including the splitting and bending of each finger with an extra Dof of the thumb rotation. The tracking does not rely on IMU data but uses rotational sensors, meaning it will not be affected by magnetic fields thus produces much more reliable data."
+  },
+
+  {
+    "ask": "How is Dexmo spatially tracked in 3D? What tracking systems are Dexmo compatible to?",
+    "answer": "For position tracking in 3D space, Dexmo can share the 6dof position data from almost any existing tracking systems such as the Opti-track tracking solution, Oculus tracking solution, Sony PSVR, or the Vive Lighthouse tracking solution. It achieves spatial tracking via attacking trackers or tracked controllers to its body via a changeable mount. As long as there is a 6dof data input, Dexmo is compatible with that tracking system."
+  },
+
+  {
+    "ask": "What Head mounted displays and developing platforms are Dexmo compatible to?",
+    "answer": "Dexmo’s SDKs support Unity 3D (based on C#) and Unreal (based on C++) engines. Dexmo is compatible to all Unity/UE4 projects, not a specific headset. In theory every high-end VR/MR headset is supported. It supports almost all the mainstream HMDs such as the Oculus CV1, DK2, Vive, Vive Pro, PSVR, and even the HoloLens, Microsoft MR headsets etc. However, the physical mounts for different trackers are needed. The Dexmo DK1 comes with mounts for Oculus CV1 controller, the Vive tracker, the Vive Controller."
+  },
+
+  {
+    "ask": "Does it work for all hand sizes?",
+    "answer": "Dexmo fits the size of majority of people’s hands with  adjustable palm straps and finger straps, but  statistically speaking, wearable devices can never cover  100% of the populations. Ones with exceptionally small or  big hands may suffer from limited moving range. If you are  unsure about your hand sizes, you may check with us by  email."
+  },
+
+  {
+    "ask": "Is calibration for hand required? Is it needed every time?",
+    "answer": "Yes, for best experience we recommend calibration. For one  person you only need to calibrate once. Our program will  make note of your hand sizes and you only need to select  your hand profile to restart. Alternatively, for the ease  of use and time saving, you may also select our preset  hand models which will roughly fit your hand shape."
+  },
+
+  {
+    "ask": "Will Dexmo come with gloves to make it easy to wear?",
+    "answer": "Alternative methods such as fingertip covers and gloves are also developed in house. However, the reason we decide to ship with the current design of using stripes as fixtures is mainly for hygiene and hand sizes adoption concerns. Gloves are good for putting on and off for one person but since most of our customers now require constant fitting for different users, we are not shipping Dexmo with glove at this stage. However, we have this reserved as custom features for clients with large quantity orders."
+  },
+
+  {
+    "ask": "What is the current price of the Dexmo Development Kit?",
+    "answer": "Currently we have not announced the exact retail price.  For our business edition, we develop specific business  cooperation with our clients from different industries and  research institutions and the unit price varies case by  case. If you are interested in purchasing Dexmo, please  contact our sales team for further details."
+  },
+
+  {
+    "ask": "Will you be making a consumer version for the public?",
+    "answer": "Yes. Our goal is not only to build the easiest to use glove for the industries, but also for the general consumers as well. However due to the economy of scale there will be some time before we can start selling products directly to personal buyers. We are steadily moving towards that goal, just be patient :)"
+  },
+
+  {
+    "ask": "Could I test Dexmo?",
+    "answer": "Yes. We offer trials all over the globe. Besides the various VR events we attend (which will be shown on the Home page of our website if there is any coming event), You are also welcomed to come and visit us at our offices. Our HQ is in Shenzhen, China. Another two oversea offices are in Cambridge-shire, England and Palo Alto, CA, US. You can book a visit by emailing us and our sales repetitiveness will assist you with your booking."
+  }
+]

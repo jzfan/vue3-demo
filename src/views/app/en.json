@@ -1,0 +1,109 @@
+[
+  {
+    "title": "Aerospace",
+    "bg": "/img/app-1.jpg",
+    "cards": [
+      {
+        "title": "Cabin Simulator",
+        "img": "/img/app-2.jpg",
+        "desc": "Designed for cabin crew training, this application simulates standard operation procedures of opening and closing emergency exit door on airplanes.",
+        "source": "Partnered with YC VR",
+        "src": "https://oss-main.dextarobotics.com/videos/application/aerospace-1.mp4"
+      },
+      {
+        "title": "Robotic Arm and Gripper Tele-Operation System (RAGTOS)",
+        "img": "/img/app-3.jpg",
+        "desc": "RAGTOS allows users to synchronize their hands with robotics arm and gripper remotely, and simultaneously feel the force feedback of objects that the gripper grasps.",
+        "src": "https://oss-main.dextarobotics.com/videos/application/aerospace-2.mp4"
+      }
+    ]
+  },
+  {
+    "title": "Training",
+    "bg": "/img/app-6.jpg",
+    "cards": [
+      {
+        "title": "SOP Training in High Risk Environments",
+        "img": "/img/app-4.jpg",
+        "desc": "In digitilized high risk environments (e.g. high radiation area), trainees can practice standard operation procedures safely and efficiently.",
+        "source": "Partnered with YC VR",
+        "src": "https://oss-main.dextarobotics.com/videos/application/training-1.mp4"
+      },
+      {
+        "title": "Professional and Vocational Training",
+        "img": "/img/app-5.jpg",
+        "desc": "VR vocatioanl training courses are offered to people working in various career fields to improve their skills in digitalized workplaces such as assembly line, manufacturing plants and power plants.",
+        "source": "Partnered with SpaceMax",
+        "src": "https://oss-main.dextarobotics.com/videos/application/training-2.mp4"
+      }
+    ]
+  },
+  {
+    "title": "Medical",
+    "bg": "/img/app-7.jpg",
+    "cards": [
+      {
+        "title": "Surgeon Simulator",
+        "img": "/img/app-11.jpg",
+        "desc": "Surgeon Simulator gives medical students/trainees a \"hands-on\" experience of human anatomy and cardiac surgery",
+        "source": "Partnered with YC VR",
+        "src": "https://oss-main.dextarobotics.com/videos/application/medical-1.mp4"
+      }
+    ]
+  },
+  {
+    "title": "Gaming",
+    "bg": "/img/app-8.jpg",
+    "cards": [
+      {
+        "title": "Sanctum Escape",
+        "img": "/img/app-12.jpg",
+        "desc": "A fully immersive VR escape-room experience, solving a series of puzzles and riddles to escape the sanctum using your hands and wits.",
+        "source": "Partnered with YC VR",
+        "src": "https://oss-main.dextarobotics.com/videos/application/gaming-2.mp4"
+      },
+      {
+        "title": "The Vacant House",
+        "img": "/img/app-13.jpg",
+        "desc": "A \"hands-on\" interactive thriller, using your hands to explore the vacant house, finding clues and hints and run for your life.",
+        "src": "https://oss-main.dextarobotics.com/videos/application/gaming-1.mp4"
+      }
+    ]
+  },
+  {
+    "title": "Education",
+    "bg": "/img/app-9.jpg",
+    "cards": [
+      {
+        "title": "Toybricks VR",
+        "img": "/img/app-14.jpg",
+        "desc": "Using the control panel with levers, knobs and buttons to get the toybricks you need, building your own house, tank and bridge.",
+        "src": "https://oss-main.dextarobotics.com/videos/application/education-1.mp4"
+      },
+      {
+        "title": "Space Education",
+        "img": "/img/app-15.jpg",
+        "desc": "Immersing yourself in a fascinating universe of satellites, rockets and chemical elements, interacting with them using your own hands",
+        "src": "https://oss-main.dextarobotics.com/videos/application/education-2.mp4"
+      }
+    ]
+  },
+  {
+    "title": "Simulation",
+    "bg": "/img/app-10.jpg",
+    "cards": [
+      {
+        "title": "Take it Apart VR",
+        "img": "/img/app-16.jpg",
+        "desc": "Roll up your sleeves! A hands-on experience of dismantling furnatures and vehicles",
+        "src": "https://oss-main.dextarobotics.com/videos/application/simulation-1.mp4"
+      },
+      {
+        "title": "Nvidia Holodeck",
+        "img": "/img/app-17.jpg",
+        "desc": "Designing and modeling was never this easy! Prototyping with VR mock-ups and collaberating with your team across locations virtually.",
+        "src": "https://oss-main.dextarobotics.com/videos/application/simulation-2.mp4"
+      }
+    ]
+  }
+]

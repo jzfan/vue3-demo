@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import thisProduct from './product2'
+import thisProduct from './product/index'
 import thisParams from './params/index'
 import thisPack from './pack2'
 import thisQuestions from './questions/index'

@@ -3,7 +3,8 @@
     class="relative pt-6 pb-8 bg-gray-f5 text-green-dark zoom-in"
     id="que-section"
   >
-    <vertical-title class="top-6">问答</vertical-title>
+    <vertical-title class="top-6">{{ $t('tag') }}</vertical-title>
+
     <swiper
       class="mt-20 pb-8 h-64 text-white w-full"
       :slides-per-view="perView"
@@ -13,7 +14,7 @@
       :slideToClickedSlide="true"
       :loop="true"
     >
-      <swiper-slide v-for="(item, index) in all" :key="index">
+      <swiper-slide v-for="(item, index) in list" :key="index">
         <this-card :item="item" />
       </swiper-slide>
     </swiper>
@@ -27,11 +28,14 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 SwiperCore.use([Pagination, A11y])
 
 import thisCard from './card'
+import zh from './zh'
+import en from './en'
+
 export default {
   components: { Swiper, SwiperSlide, thisCard },
   data() {
     return {
-      all: [],
+      //   all: [],
     }
   },
   created() {},
@@ -48,26 +52,23 @@ export default {
       }
       return 1
     },
-  },
-  watch: {
-    '$store.state.lang': {
-      immediate: true,
-      handler: function(newVal) {
-        this.$i18n.locale = newVal
-        let url = `/json/questions-${newVal}.json`
-        this.axios.get(url).then((res) => {
-          //   console.log(res)
-          this.all = res.data
-          this.$nextTick(() => {
-            var mySwiper = this.$el.querySelector('.swiper-container').swiper
-            mySwiper.slidePrev()
-          })
-        })
-      },
+    list() {
+      return this.$store.state.lang == 'zh' ? zh : en
     },
   },
 }
 </script>
+
+<i18n>
+{
+  "en": {
+    "tag": "Q&A"
+  },
+  "zh": {
+    "tag": "包装"
+  }
+}
+</i18n>
 
 <style lang="scss">
 #que-section {

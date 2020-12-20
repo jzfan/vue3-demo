@@ -44,12 +44,17 @@
 </template>
 
 <script>
+import en from './en.json'
+import zh from './zh.json'
+
 export default {
-  props: ['all'],
   data() {
-    return {
-      //   video: {},
-    }
+    return {}
+  },
+  computed: {
+    all() {
+      return this.$store.state.lang == 'zh' ? zh : en
+    },
   },
   methods: {
     onShowVideo(video) {

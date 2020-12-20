@@ -1,5 +1,5 @@
 <template>
-  <div id="main" class="text-left text-white">
+  <div id="main">
     <div class="stories__13svm">
       <this-header />
       <section class="dexta-section center" id="iterativeProduct">
@@ -16,7 +16,7 @@
 import thisIntro from './intro'
 import thisProducts from './products'
 import thisHeader from './header'
-import thisTeam from './team'
+import thisTeam from './team/index'
 import thisWork from './work'
 export default {
   components: { thisIntro, thisProducts, thisHeader, thisTeam, thisWork },

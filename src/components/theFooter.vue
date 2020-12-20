@@ -8,7 +8,7 @@
               class="active__1v1oR"
               aria-current="page"
               @click="$router.push('/')"
-              >主页</a
+              >{{ $t('home') }}</a
             ></span
           ><span
             ><a
@@ -17,35 +17,35 @@
               @click="$router.push('app')"
               style=""
               aria-current="page"
-              >应用场景</a
+              >{{ $t('app') }}</a
             ></span
           ><span
             ><a
               class="cursor-pointer"
               :class="$route.path == '/sdk' ? 'active__1v1oR' : ''"
               @click="$router.push('/sdk')"
-              >软件支持</a
+              >{{ $t('sdk') }}</a
             ></span
           ><span
             ><a
               class="cursor-pointer"
               :class="$route.path == '/press' ? 'active__1v1oR' : ''"
               @click="$router.push('/press')"
-              >媒体报道</a
+              >{{ $t('press') }}</a
             ></span
           ><span
             ><a
               :class="$route.path == '/about' ? 'active__1v1oR' : ''"
               class="cursor-pointer"
               @click="$router.push('/about')"
-              >关于我们</a
+              >{{ $t('about') }}</a
             ></span
           ><span
             ><a
               class="cursor-pointer"
               :class="$route.path == '/product' ? 'active__1v1oR' : ''"
               @click="$router.push('/product')"
-              >产品故事</a
+              >{{ $t('product') }}</a
             ></span
           >
         </div>
@@ -53,7 +53,7 @@
       <div class="right__gd0VX">
         <div class="contact__-Nj1v">
           <a href="mailto:inquiry@dextarobotics.com"
-            >联系我们: inquiry@dextarobotics.com</a
+            >{{ $t('contact') }}: inquiry@dextarobotics.com</a
           >
         </div>
         <div>
@@ -140,5 +140,28 @@ export default {
   methods: {},
 }
 </script>
+
+<i18n>
+{
+  "en": {
+    "home": "Home",
+    "app": "Application",
+    "sdk": "SDK",
+    "press": "Press",
+    "about": "About Us",
+    "product": "Product Story",
+    "contact": "Contact"
+  },
+  "zh": {
+      "home": "主页",
+    "app": "应用场景",
+    "sdk": "软件支持",
+      "press": "媒体报道",
+      "about": "关于我们",
+      "product": "产品故事",
+      "contact": "联系我们"
+  }
+}
+</i18n>
 
 <style></style>

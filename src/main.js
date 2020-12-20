@@ -20,6 +20,8 @@ import VueClickAway from 'vue3-click-away'
 
 import 'video.js/dist/video-js.min.css'
 
+import langMixin from './mixins/lang'
+
 const app = createApp(App)
   .use(axios)
   .use(i18n)
@@ -30,5 +32,5 @@ const app = createApp(App)
 
 import mitt from 'mitt'
 app.config.globalProperties.$bus = mitt()
-
+app.mixin(langMixin)
 app.mount('#app')

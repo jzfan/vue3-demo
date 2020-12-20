@@ -1,12 +1,11 @@
 <template>
-  <div id="main" class="text-left text-white">
+  <div id="main">
     <div class="press__1b_tf">
       <div class="header__3pW9c">
         <div class="headerContentContainer__ZeYAV">
-          <h1>媒体报道</h1>
+          <h1>{{ $t('title') }}</h1>
           <p>
-            如果您是媒体人士，想与Dexta
-            Robotics的成员沟通，请发送邮件至cooperation@dextarobotics.com联系我们。
+            {{ $t('subtitle', { email: 'cooperation@dextarobotics.com' }) }}
           </p>
         </div>
       </div>
@@ -153,5 +152,18 @@ export default {
   },
 }
 </script>
+
+<i18n>
+{
+  "en": {
+    "title": "Press",
+    "subtitle": "If you're a member of the press and would like to speak with someone from Dexta robotics, please contact us at %{email}"
+  },
+  "zh": {
+    "title": "媒体报道",
+    "subtitle": "如果您是媒体人士，想与Dexta Robotics的成员沟通，请发送邮件至 %{email} 联系我们。"
+  }
+}
+</i18n>
 
 <style></style>

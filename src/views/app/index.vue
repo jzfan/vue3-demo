@@ -1,7 +1,10 @@
 <template>
-  <div id="app-section" class="text-left text-white bg-white">
+  <div id="app-section" class=" bg-white">
     <div class="applicationPage__1pEBM">
-      <component :is="contentOfLang"></component>
+      <this-header />
+      <div class="applicationContainer__JcPuN">
+        <this-sections />
+      </div>
     </div>
   </div>
   <this-modal />
@@ -9,23 +12,30 @@
 
 <script>
 import thisModal from './modal'
-import zh from './zh'
-import en from './en'
+import thisHeader from './header'
+import thisSections from './sections'
 
 export default {
-  components: { thisModal, zh, en },
+  components: { thisModal, thisHeader, thisSections },
   data() {
     return {
       //   player: null,
     }
   },
-  computed: {
-    contentOfLang() {
-      return this.$store.state.lang == 'zh' ? zh : en
-    },
-  },
+  computed: {},
   methods: {},
 }
 </script>
+
+<i18n>
+{
+  "en": {
+    "tag": "Q&A"
+  },
+  "zh": {
+    "tag": "包装"
+  }
+}
+</i18n>
 
 <style></style>

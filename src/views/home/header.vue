@@ -1,7 +1,7 @@
 <template>
   <header class="sy-bg relative">
     <div
-      class="absolute md:bottom-1/3 md:w-160 bottom-10 left-1/10 w-2/3 md:w-1/2 text-left text-white"
+      class="absolute md:bottom-1/3 md:w-160 bottom-10 left-1/10 w-2/3 md:w-1/2"
     >
       <h1
         class="text-2xl md:text-5xl lg:text-6xl font-bold leading-none text-gray-900"

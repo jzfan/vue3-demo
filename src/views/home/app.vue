@@ -1,6 +1,6 @@
 <template>
   <section class="relative px-16 pt-2 pb-8 zoom-in bg-white" id="app-section">
-    <vertical-title>应用</vertical-title>
+    <vertical-title>{{ $t('tag') }}</vertical-title>
     <swiper
       class="mt-16 pb-8 text-white h-64 w-full"
       :slides-per-view="perView"
@@ -78,6 +78,17 @@ export default {
   },
 }
 </script>
+
+<i18n>
+{
+  "en": {
+    "tag": "Application"
+  },
+  "zh": {
+    "tag": "应用"
+  }
+}
+</i18n>
 
 <style lang="scss">
 #app-section {

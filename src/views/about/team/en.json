@@ -1,0 +1,250 @@
+[
+  {
+    "title": "Management",
+    "name": "Xiaochi Gu",
+    "job": "CEO",
+    "avatar": "/img/team-1.jpg",
+
+    "desc": "Passionate Full-Stack Roboticist, Human-Computer-Interaction Researcher, Mechanical Engineer, Control Engineer, Studied Mechanical &amp; Control Engineering @University of Cambridge"
+  },
+
+  {
+    "title": "",
+    "name": "Tianshu Li",
+    "job": "Director of Operations",
+    "avatar": "/img/team-3.jpg",
+    "desc": "In charge of Marketing, Public Relations and After-sales services,  Studied Liberal Arts @King’s College London Actuarial Science @The  University of Hong Kong Economics &amp; Finance @Tsinghua  University"
+  },
+
+  {
+    "title": "",
+
+    "name": "Yoyo Zhang",
+    "job": "Director of Finance",
+    "avatar": "/img/team-4.jpg",
+    "desc": "Full Stack Accountant with over 10 years of experience Formally worked @TECENT"
+  },
+  {
+    "title": "",
+    "name": "Ruimin Huang",
+    "job": "HR Specialist",
+    "avatar": "/img/team-5.jpg",
+
+    "desc": "Human Resources Specialist Formally worked for IBM with specific focus on technical talent acquisition Studied International Economics and Trade @Guangdong University of Foreign Studies"
+  },
+
+  {
+    "title": "",
+
+    "name": "Ruimin Huang",
+    "job": "HR Specialist",
+    "avatar": "/img/team-29.jpg",
+
+    "desc": "Human Resources Specialist Formally worked for IBM with specific focus on technical talent acquisition Studied International Economics and Trade @Guangdong University of Foreign Studies"
+  },
+
+  {
+    "title": "",
+
+    "name": "Weiguo Lu",
+    "job": "Visual Designer",
+    "avatar": "/img/team-10.jpg",
+
+    "desc": "Enthusiastic Graphics Designer, Industrial Designer, Game Artist, Film Maker, Studied Digital Media Arts @Shenzhen University"
+  },
+
+  {
+    "title": "",
+
+    "name": "Hengqing Liu",
+    "job": "Director of Manufacturing",
+    "avatar": "/img/team-7.jpg",
+
+    "desc": "Seasoned Manufacturing Specialist, Injection Molding Specialist, Industrial Designer, Structure Engineer, Over 10 years of experience in Product Design, Helped bring over hundreds of products of all-kinds to life"
+  },
+  {
+    "title": "",
+
+    "name": "Shishi Shuang",
+    "job": "Quality Control Engineer",
+    "avatar": "/img/team-8.jpg",
+    "desc": "Experienced Mechanical Engineer, with over 10 years of experience  in quality Control, Formally worked @ Foxconn, where he was  responsible for QC for numerous Apple products Studied Mechanical  and Automation Engineering @Nanchang University"
+  },
+
+  {
+    "title": "",
+
+    "name": "Zixiang Tang",
+    "job": "Unreal Engineer",
+    "avatar": "/img/team-15.jpg",
+
+    "desc": "Full-stack Software Engineer, Passionate problem solver, Lead the robotics team @Beijing University of Aeronautics and Astronautics Formally worked @DJI Innovation"
+  },
+  {
+    "title": "",
+
+    "name": "Chukai Hong",
+    "job": "Unity Engineer",
+    "avatar": "/img/team-17.jpg",
+
+    "desc": "Skilled Unity Engineer, Passionate Game Designer Studied  Mechanical Design, Manufacturing and Automation"
+  },
+
+  {
+    "title": "",
+    "name": "Per Ola Kristensson",
+    "job": "Technical Advisor",
+    "avatar": "/img/team-2.jpg",
+    "desc": "Computer Scientist, 2013 MIT Innovator 35 under 35, 2014 ACM UIST Lasting Impact Award, Lead the Intelligent Interactive Systems Group @University of Cambridge"
+  },
+  {
+    "title": "",
+    "name": "Dangxiao Wang",
+    "job": "Academic Advisor",
+    "avatar": "/img/team-22.jpg",
+    "desc": "Chair, IEEE TCH (2014-2017)\nAE, IEEE Trans. on Haptics\nProfessor @Beijing University \nof Aeronautics and Astronautics"
+  },
+
+  {
+    "title": "Office Mascot",
+
+    "name": "Fluffy",
+    "job": "Office Mascot",
+    "avatar": "/img/team-21.jpg",
+
+    "desc": "VR/MR Authority in the dog society. You can tell from the Magic Leap on his face, Fluffy is a pro."
+  },
+
+  {
+    "title": "Embedded System Engineer",
+
+    "name": "Dao Zhou",
+    "job": "Software Engineer",
+    "avatar": "/img/team-11.jpg",
+
+    "desc": "Persevering Problem Solver Computer Scientist, Unity Engineer Studied Electrical and Information Engineering @University of Cambridge"
+  },
+
+  {
+    "title": "",
+
+    "name": "Han Zhang",
+    "job": "Electrical Engineer",
+    "avatar": "/img/team-12.jpg",
+
+    "desc": "Full-stack Roboticist, Enthusiastic Maker, Researcher Studied Electronics Engineering &amp; Mechanical Engineering (Double Major) @Tsinghua University"
+  },
+
+  {
+    "title": "Designer",
+
+    "name": "Yuanzhe Bian",
+    "job": "Web Designer",
+    "avatar": "/img/team-9.jpg",
+
+    "desc": "Versatile Engineer, Artist, Electrical Engineer, Web Designer, Photographer Studied Telecommunication Engineering @NUPT and Computer Science &amp; Mathematics @UIUC Formally worked @Facebook"
+  },
+
+  {
+    "title": "Software Engineer",
+
+    "name": "Yifei Zhang",
+    "job": "Software Engineer",
+    "avatar": "/img/team-14.jpg",
+
+    "desc": "Full-Stack Computer Scientist, Software Architect, Studied Computer Science @University of California, San Diego Formally worked @Microsoft"
+  },
+  {
+    "title": "",
+    "name": "Zi Zhang",
+    "job": "Marketing Manager",
+    "avatar": "/img/team-23.jpg",
+    "desc": "Digital marketer previously @ DJI  \nUnrestrained Content creator\nStudied media and communications @University of Birmingham, Mundus Journalism alumna"
+  },
+
+  {
+    "title": "Mechanical Engineer",
+
+    "name": "Juxue Tang",
+    "job": "Mechanical Engineer",
+    "avatar": "/img/team-6.jpg",
+    "desc": "Roboticist, Embedded System Engineer, Mechanical Engineer, Studied Mechanical &amp; Control Engineering @University of Cambridge"
+  },
+  {
+    "title": "",
+
+    "name": "Lifu Cong",
+    "job": "Unity Engineer",
+    "avatar": "/img/team-16.jpg",
+
+    "desc": "Skilled Unity Engineer, VR/AR Industrial Specialist, with specialty in SDK Development, Studied Digital Media Technology @Harbin Institute of Technology"
+  },
+  {
+    "title": "",
+
+    "name": "Shuaishuai Chen",
+    "job": "Electrical Engineer",
+    "avatar": "/img/team-13.jpg",
+
+    "desc": "Skilled Electrical Engineer, with specialties in Integrated Circuit Design and Embedded System Engineering, Studied Instruments and Methods of Observation @UESTC"
+  },
+
+  {
+    "title": "Interns",
+
+    "name": "Yuzheng Ding",
+    "job": "Software Engineer (Intern)",
+    "avatar": "/img/team-18.jpg",
+
+    "desc": "Passionate Game designer, Unity Engineer, Computer Scientist, with  a special focus on gaming logic, Studied Computer Science  @University of Cambridge"
+  },
+
+  {
+    "title": "",
+
+    "name": "Jianzhong Kuang",
+    "job": "Software Engineer (Intern)",
+    "avatar": "/img/team-19.jpg",
+
+    "desc": "Unity Engineer, Electrical Engineer, with a special focus on Interactive Art, Studied Electronic Engineering @Tsinghua University"
+  },
+
+  {
+    "title": "",
+    "name": "Zhengyi Ou",
+    "job": "Software Engineer（2019）",
+    "avatar": "/img/team-24.jpg",
+
+    "desc": "Robotics and football lover\nRoboMaster competition \"Jiaolong\" team leader \nA pure mechanical turned software engineer\nStudied Mechanical Engineering @Shanghai JiaoTong University"
+  },
+  {
+    "title": "",
+    "name": "Ran Zhou",
+    "job": "Designer（2019）",
+    "avatar": "/img/team-25.jpg",
+
+    "desc": "Tangible and digital interaction designer\nRobotics Fan\nStudied Urban Design@HUST\nStudies Design and Technology @Parsons School of Design"
+  },
+  {
+    "title": "",
+    "name": "Andrew Wang",
+    "job": "Embedded Systems Engineer（2019）",
+    "avatar": "/img/team-26.jpg",
+
+    "desc": "Electronics and embedded systems enthusiast\nRobot making hobbyist\nLanguage lover\nStudies Engineering @University of Cambridge"
+  },
+  {
+    "title": "",
+    "name": "Meixi Chen",
+    "job": "Unity Engineer（2019）",
+    "avatar": "/img/team-27.jpg",
+    "desc": "Enthusiatic problem solver\nsoftware engineer, Unity developer\nStudies Engineering @University of Cambridge"
+  },
+  {
+    "title": "",
+    "name": "Chengjie Ren",
+    "job": "Software Engineer, Electrical Engineer（2019）",
+    "avatar": "/img/team-28.jpg",
+    "desc": "Passionate Unity developer, researcher\nStudies Engineering @University of Cambridge"
+  }
+]

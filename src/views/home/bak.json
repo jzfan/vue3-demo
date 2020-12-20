@@ -1,27 +1,7 @@
-<template>
-  <div class="dexta-section-content iterativeProductSection__25_R9">
-    <h1 class="text-6xl font-semibold mb-6">{{ $t('title') }}</h1>
-    <p>
-      {{ $t('desc[0]') }}
-    </p>
-    <p>
-      {{ $t('desc[1]') }}
-    </p>
-    <p>
-      {{ $t('desc[2]') }}
-    </p>
-  </div>
-</template>
-
-<script>
-export default {}
-</script>
-
-<i18n>
 {
   "en": {
     "title": "Product Iterations",
-    "desc": [
+    "descs": [
       "Dexmo started out as a personal project of the founder and CEO Aler Gu. The first generation of Dexmo was machined, silver welded and hand made from brass. Then we take this idea further and combine it with advanced robotics technology to improve the immersion of VR/MR.",
 
       "Building something that never existed before from scratch is hard work, but luckily we are engineers who enjoy challenges. Over the past years we have built and tested more than 50 generations of Dexmo to verify the feasibility of different wearing mechanism, various force feedback methods and countless manufacturing techniques.",
@@ -38,5 +18,3 @@ export default {}
     ]
   }
 }
-</i18n>
-<style></style>

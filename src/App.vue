@@ -1,5 +1,5 @@
 <template>
-  <the-layout class="min-h-screen relative">
+  <the-layout class="min-h-screen relative text-left text-white">
     <router-view />
     <!-- <fixed-bar /> -->
   </the-layout>

@@ -31,7 +31,7 @@
     @click="$router.push('/contact')"
     class="btn btn-green px-6 fixed z-20 left-4 bottom-4"
   >
-    联系咨询
+    {{ $t('btn') }}
   </button>
 </template>
 
@@ -68,11 +68,13 @@ export default {
 {
 "en": {
     "title": "The virtual world lies within your grasp",
-    "p": "Dexmo, the world's first commercialized light weight, wireless, dual hand force feedback glove. It offers the most compelling force feedback experience with both motion capture and force feedback abilities, designed for the use in training, education, medical, gaming, simulation, aerospace and much more."
+    "p": "Dexmo, the world's first commercialized light weight, wireless, dual hand force feedback glove. It offers the most compelling force feedback experience with both motion capture and force feedback abilities, designed for the use in training, education, medical, gaming, simulation, aerospace and much more.",
+    "btn": "CONTACT US"
   },
   "zh": {
     "title": "虚拟世界 尽在掌握",
-    "p": "Dexmo是全球第一款商业化便携式双手无线力反馈手套，兼具手部动作捕捉与力反馈功能，带来最激动人心的力反馈互动体验，可广泛应用于航空航天、工业培训、教育科研、医疗康复、仿真建模、游戏社交等各领域。"
+    "p": "Dexmo是全球第一款商业化便携式双手无线力反馈手套，兼具手部动作捕捉与力反馈功能，带来最激动人心的力反馈互动体验，可广泛应用于航空航天、工业培训、教育科研、医疗康复、仿真建模、游戏社交等各领域。",
+    "btn": "联系咨询"
   }
 }
 </i18n>
