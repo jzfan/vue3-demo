@@ -34,7 +34,7 @@
             <person-card :person="team[12]" />
           </span>
           <br />
-          <h1 class="my-6 text-5xl font-semibold">Dexta 的朋友们</h1>
+          <h1 class="my-6 text-5xl font-semibold">{{ $t('title2') }}</h1>
           <span>
             <person-card :person="team[13]" />
             <person-card :person="team[14]" />
@@ -77,11 +77,13 @@ export default {
 <i18n>
 {
   "en": {
-    "title": "Team Members"
+    "title": "Team Members",
+    "title2": "Dexta's Friends"
     
   },
   "zh": {
-    "title": "团队成员"
+    "title": "团队成员",
+    "title2": "Dexta 的朋友们"
   }
 }
 </i18n>
