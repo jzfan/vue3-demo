@@ -22,7 +22,7 @@ import thisQuestions from './questions/index'
 import thisOrder from './order'
 import thisHeader from './header'
 import thisIntro from './intro'
-import thisApp from './app'
+import thisApp from './app/index'
 export default {
   components: {
     thisProduct,

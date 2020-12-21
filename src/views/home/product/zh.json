@@ -1,6 +1,7 @@
 [
   {
     "title": "无可比拟的功能与易用性",
+    "img": "https://oss-main.dextarobotics.com/images/home/free-to-use-ch.gif",
     "ps": [
       {
         "subtitle": "便携&无线",
@@ -18,6 +19,7 @@
   },
   {
     "title": "真实、直觉、自然的交互",
+    "img": "https://oss-main.dextarobotics.com/images/home/truly-intuitive-natural-interaction-ch.gif",
     "ps": [
       {
         "subtitle": "全手动作捕捉",
@@ -35,6 +37,7 @@
   },
   {
     "title": "最完善的整体产品体验",
+    "img": "https://oss-main.dextarobotics.com/images/home/mass-production-ch.gif",
     "ps": [
       {
         "subtitle": "符合人体工程学和设计卫生标准",

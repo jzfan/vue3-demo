@@ -30,9 +30,7 @@
           </template>
         </div>
         <div>
-          <img
-            src="https://oss-main.dextarobotics.com/images/home/free-to-use-ch.gif"
-          />
+          <img :src="list[0].img" />
         </div>
       </div>
     </div>
@@ -60,9 +58,7 @@
           </template>
         </div>
         <div>
-          <img
-            src="https://oss-main.dextarobotics.com/images/home/truly-intuitive-natural-interaction-ch.gif"
-          />
+          <img :src="list[1].img" />
         </div>
       </div>
       <div
@@ -88,9 +84,7 @@
           </template>
         </div>
         <div>
-          <img
-            src="https://oss-main.dextarobotics.com/images/home/mass-production-ch.gif"
-          />
+          <img :src="list[2].img" />
         </div>
       </div>
     </div>
